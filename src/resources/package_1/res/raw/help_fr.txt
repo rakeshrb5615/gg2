@@ -1,0 +1,33 @@
+## FAQ
+# En cas de problème avec l’application
+1. Vérifiez que l’application est à jour (voir la page Play Store).
+2. Videz le stockage et le cache de l’application.
+3. Toujours pas résolu ? Envoyez-moi un email via la section contact. Je réponds à tout le monde !
+
+# Problèmes connus
+• Limitation écran d’accueil/écran verrouillé : certains appareils (Samsung, Xiaomi, etc.) appliquent automatiquement les fonds d’écran animés à la fois à l’écran d’accueil et à l’écran verrouillé, même si vous choisissez uniquement l’écran d’accueil. Malheureusement, c’est une limitation du téléphone et non un problème que l’application peut corriger.
+• Utilisateurs de Pixel 10 : si vous voyez des particules voler rapidement au milieu de l’écran, réglez le dimmer sur une valeur supérieure à 0,0 pour corriger.
+• Problèmes de contraste dans certaines scènes.
+• Quelques instabilités.
+
+#Le bouton « Définir comme fond d’écran » a disparu !
+Il n’apparaît que lorsque le fond d’écran n’est pas déjà appliqué.
+
+# Pourquoi la météo ne se met-elle pas à jour en temps réel ?
+Pour économiser la batterie et les données, l’application ne vérifie pas en permanence les changements météo.
+Elle met à jour à intervalles réguliers, entre 5 minutes et 5 heures selon l’interval selectionné dans les options.
+
+# Pourquoi il ne neige/pleut pas tout le temps même s’il neige/pleut dehors ?
+Les animations météo n’apparaissent que lorsque certaines conditions sont réunies (type de précipitation, intensité, luminosité, etc.).
+Si votre source météo indique « nuageux » au lieu de « neige », ou si la pluie est faible, l’application peut afficher simplement des nuages pour garder une meilleure lisibilité.
+
+# Pourquoi le lever ou coucher de soleil est-il décalé d’environ une heure ?
+Cela peut arriver si le fournisseur météo détecte une ville ou une région proche dans un fuseau horaire différent, surtout près des frontières.
+L’application utilise les données de localisation renvoyées par le fournisseur météo. Si ces données proviennent d’une station située dans un autre fuseau horaire, les horaires peuvent être décalés d’environ une heure.
+Ce n’est pas un bug de l’application, mais une limite du fonctionnement de certains services météo.
+
+# Je pense que ça vide ma batterie !
+L’application est optimisée pour minimiser la consommation.
+Elle réduit son taux de rafraîchissement quand la scène est immobile et s’arrête totalement lorsque l’écran est éteint. Elle utilise aussi des éléments pré-calculés quand c’est possible.
+En mode économie d’énergie, elle limite encore plus les animations et les mises à jour.
+

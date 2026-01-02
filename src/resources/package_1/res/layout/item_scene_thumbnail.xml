@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<FrameLayout android:padding="4.0dp"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+  <ImageButton android:id="@id/thumbnail_button"
+               android:background="?attr/selectableItemBackgroundBorderless"
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:scaleType="centerCrop" />
+</FrameLayout>

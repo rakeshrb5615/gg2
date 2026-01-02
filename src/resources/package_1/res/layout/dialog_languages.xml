@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:layout_gravity="center_horizontal"
+              android:orientation="vertical"
+              android:id="@id/dialog_root"
+              android:padding="@dimen/dialog_padding"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:maxWidth="560.0dp"
+              android:minWidth="280.0dp"
+              android:elevation="2.0dp" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+  <ImageView android:layout_gravity="center"
+             android:id="@id/dialog_languages_icon"
+             android:visibility="gone"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="@dimen/dialog_title_margin"
+             android:src="@drawable/language_icon" />
+  <com.google.android.material.textview.MaterialTextView android:text="@string/set_your_language"
+                        style="@style/Widget.Chill.Dialog.Title.Centered" />
+  <TextView android:text="@string/language_description"
+            style="@style/Widget.Chill.Dialog.Description" />
+  <ScrollView android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:maxHeight="300.0dp"
+              android:fillViewport="true">
+    <RadioGroup android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+      <com.google.android.material.radiobutton.MaterialRadioButton android:id="@id/button_english"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/english"
+                            style="@style/Widget.Material3.CompoundButton.RadioButton" />
+      <com.google.android.material.radiobutton.MaterialRadioButton android:id="@id/button_french"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/french"
+                            style="@style/Widget.Material3.CompoundButton.RadioButton" />
+      <com.google.android.material.radiobutton.MaterialRadioButton android:id="@id/button_Japanese"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/japanese"
+                            style="@style/Widget.Material3.CompoundButton.RadioButton" />
+      <com.google.android.material.radiobutton.MaterialRadioButton android:id="@id/button_traditional_chinese"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/trad_zh"
+                            style="@style/Widget.Material3.CompoundButton.RadioButton" />
+    </RadioGroup>
+  </ScrollView>
+  <LinearLayout android:gravity="end"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+    <com.google.android.material.button.MaterialButton android:id="@id/language_dialog_cancel_button"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="@string/cancel_button"
+                          android:layout_marginEnd="@dimen/button_padding"
+                          style="@style/Widget.Material3.Button.TextButton" />
+    <com.google.android.material.button.MaterialButton android:id="@id/language_dialog_set_button"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="@string/set_language_button"
+                          style="@style/Widget.Material3.Button.TextButton" />
+  </LinearLayout>
+</LinearLayout>

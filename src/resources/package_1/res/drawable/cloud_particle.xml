@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<vector android:height="49.07dp"
+        android:width="49.07dp"
+        android:viewportWidth="49.07"
+        android:viewportHeight="49.07" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+  <path android:fillColor="@drawable/$cloud_particle__0"
+        android:pathData="M24.53,24.53m-24.53,0a24.53,24.53 0,1 1,49.06 0a24.53,24.53 0,1 1,-49.06 0"
+        android:strokeAlpha="0.85"
+        android:fillAlpha="0.85" />
+</vector>

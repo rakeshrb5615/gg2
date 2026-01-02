@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:gravity="center"
+              android:orientation="vertical"
+              android:background="@drawable/bg_card_highlight"
+              android:padding="@dimen/layout_margins"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+  <TextView android:textSize="20.0sp"
+            android:id="@id/tv_title_annual"
+            android:layout_width="wrap_content"
+            android:text="@string/c_p_t"
+            style="@style/Widget.Chill.TextView.ListItem.Title.Bold" />
+  <TextView android:textSize="14.0sp"
+            android:layout_gravity="start"
+            android:id="@id/ul_c_p_sum"
+            android:layout_width="wrap_content"
+            android:text="@string/p_summary_l"
+            style="@style/Widget.Chill.TextView.ListItem.Title.Bold" />
+  <TextView android:textSize="18.0sp"
+            android:id="@id/tv_price_annual"
+            android:layout_width="wrap_content"
+            android:text="@string/become_p"
+            style="@style/Widget.Chill.TextView.ListItem.Title.Bold" />
+  <Button android:layout_gravity="center"
+          android:id="@id/ul_cp_button"
+          android:layout_width="fill_parent"
+          android:text="@string/become_p"
+          android:textAlignment="center"
+          android:backgroundTint="@color/l_w_button_color_day"
+          style="@style/Widget.Chill.TextView.ListItem.Title.Bold" />
+  <Button android:layout_gravity="center"
+          android:id="@id/ul_p_button"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/c_p_lt_b_l"
+          android:textAlignment="center"
+          android:backgroundTint="@color/p_button_color_day"
+          style="@style/Widget.Chill.TextView.ListItem.Title.Bold" />
+  <TextView android:textSize="11.0sp"
+            android:id="@id/tv_content_header"
+            android:text="@string/c_p_sum"
+            android:textAlignment="center"
+            style="@style/Widget.Chill.TextView.ListItem.Description" />
+</LinearLayout>

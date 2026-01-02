@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:layout_gravity="center_horizontal"
+              android:orientation="vertical"
+              android:id="@id/dialog_root"
+              android:padding="@dimen/dialog_padding"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:maxWidth="560.0dp"
+              android:minWidth="280.0dp"
+              android:elevation="2.0dp" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:chillwallpaperproject="http://schemas.android.com/apk/res-auto">
+  <ImageView android:layout_gravity="center"
+             android:id="@id/dialog_location_icon"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="@dimen/dialog_title_margin"
+             android:src="@drawable/location_on_icon" />
+  <com.google.android.material.textview.MaterialTextView android:text="@string/set_your_location"
+                        style="@style/Widget.Chill.Dialog.Title.Centered" />
+  <TextView android:text="@string/choose_location_method"
+            style="@style/Widget.Chill.Dialog.Description" />
+  <RadioGroup android:layout_width="fill_parent"
+              android:layout_height="wrap_content">
+    <com.google.android.material.radiobutton.MaterialRadioButton android:id="@id/btn_gps"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:checked="false"
+                          android:text="@string/use_GPS"
+                          style="@style/Widget.Material3.CompoundButton.RadioButton" />
+    <com.google.android.material.radiobutton.MaterialRadioButton android:id="@id/btn_manual"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:checked="false"
+                          android:text="@string/enter_location_manually"
+                          style="@style/Widget.Material3.CompoundButton.RadioButton" />
+  </RadioGroup>
+  <ScrollView android:orientation="vertical"
+              android:id="@id/manual_input_section"
+              android:visibility="gone"
+              android:scrollbars="none"
+              android:layout_width="fill_parent"
+              android:layout_height="300.0dp"
+              android:fillViewport="true"
+              android:nestedScrollingEnabled="true">
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="16.0dp">
+      <TextView android:text="@string/enter_a_city_name"
+                style="@style/Widget.Chill.Dialog.Description" />
+      <com.google.android.material.textfield.TextInputLayout android:id="@id/layout_input_city"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/city_name"
+                            chillwallpaperproject:errorEnabled="true"
+                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+        <com.google.android.material.textfield.TextInputEditText android:id="@id/input_city"
+                              android:layout_width="fill_parent"
+                              android:layout_height="wrap_content"
+                              android:singleLine="true"
+                              android:imeOptions="actionDone" />
+      </com.google.android.material.textfield.TextInputLayout>
+      <TextView android:text="@string/or_latitude_longitude_coordinates"
+                style="@style/Widget.Chill.Dialog.Description" />
+      <com.google.android.material.textfield.TextInputLayout android:id="@id/layout_input_latitude"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/latitude"
+                            chillwallpaperproject:errorEnabled="true"
+                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+        <com.google.android.material.textfield.TextInputEditText android:id="@id/input_lat"
+                              android:layout_width="fill_parent"
+                              android:layout_height="wrap_content"
+                              android:singleLine="true"
+                              android:inputType="numberDecimal"
+                              android:imeOptions="actionDone" />
+      </com.google.android.material.textfield.TextInputLayout>
+      <com.google.android.material.textfield.TextInputLayout android:id="@id/layout_input_longitude"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/longitude"
+                            chillwallpaperproject:errorEnabled="true"
+                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+        <com.google.android.material.textfield.TextInputEditText android:id="@id/input_lon"
+                              android:layout_width="fill_parent"
+                              android:layout_height="wrap_content"
+                              android:singleLine="true"
+                              android:inputType="numberDecimal"
+                              android:imeOptions="actionDone" />
+      </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+  </ScrollView>
+  <LinearLayout android:gravity="end"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+    <com.google.android.material.button.MaterialButton android:id="@id/location_dialog_cancel_button"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="@string/cancel_button"
+                          android:layout_marginEnd="@dimen/button_padding"
+                          style="@style/Widget.Material3.Button.TextButton" />
+    <com.google.android.material.button.MaterialButton android:id="@id/location_dialog_set_button"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="@string/set_location_button"
+                          style="@style/Widget.Material3.Button.TextButton" />
+  </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="vertical"
+              android:id="@id/bottom_sheet_layout"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+  <View android:layout_gravity="center"
+        android:id="@id/changelog_title_line"
+        android:background="@drawable/rounded_line"
+        android:layout_width="40.0dp"
+        android:layout_height="3.8dp"
+        android:layout_marginTop="@dimen/short_margin"
+        android:layout_marginStart="@dimen/layout_padding"
+        android:layout_marginEnd="@dimen/layout_padding" />
+  <TextView android:textAppearance="?attr/textAppearanceHeadline6"
+            android:layout_gravity="center_horizontal"
+            android:id="@id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margins"
+            android:text="@string/about_changelog"
+            android:fontFamily="@font/jost_medium" />
+  <ScrollView android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="8.0dp"
+              android:nestedScrollingEnabled="true">
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+      <TextView android:textSize="16.0sp"
+                android:id="@id/contentTextView"
+                android:padding="@dimen/layout_padding"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_changelog"
+                android:lineSpacingMultiplier="1.2"
+                android:fontFamily="@font/jost_book" />
+      <include android:id="@id/settings_help_layout"
+               android:visibility="gone"
+               layout="@layout/settings_help_layout" />
+      <include android:id="@id/toolbar_info_layout"
+               android:visibility="gone"
+               layout="@layout/information" />
+      <include android:id="@id/toolbar_toggle_layout"
+               android:visibility="gone"
+               layout="@layout/effects_layout" />
+      <include android:id="@id/bottom_sheet_contact_layout"
+               android:visibility="gone"
+               layout="@layout/contact_layout" />
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>

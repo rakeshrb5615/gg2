@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<vector android:height="47.73dp"
+        android:width="10.65dp"
+        android:viewportWidth="10.65"
+        android:viewportHeight="47.73" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+  <path android:fillColor="#fff"
+        android:pathData="M10.65,0.45l-1.43,-0.45l-8.67,0l-0.14,47.73l10.1,0l0.14,-47.28z" />
+  <path android:fillColor="@drawable/$building8__0"
+        android:pathData="M9.22,0l-8.68,0l-0.14,12.11l-0.4,1.49l0.4,34.13l8.67,0l-0.39,-34.13l0.39,-1.49l0.15,-12.11z" />
+  <path android:fillColor="#f7f7f7"
+        android:pathData="M8.68,13.6l-8.68,0l0.4,-1.49l8.67,0l-0.39,1.49z" />
+</vector>

@@ -1,0 +1,33 @@
+## Q&A
+# In case of an issue with the app 
+1. Check if your app is up to date (visit the Play Store page).
+2. Clear the app storage and cache. 
+3. Still not resolved? Send me en email in the contact section. I answer everyone!
+
+# Known Issues
+• Home/lock screen limitation: Some devices (like Samsung, Xiaomi) automatically apply live wallpapers to both home and lock screens, even if you select home screen only. Unfortunately, this is a device limitation without an app fix. Apologies for the inconvenience.
+• Pixel 10 users: If you notice a particle glitch, set the dimmer to any value above 0.0 to fix it.
+• Occasional contrast issues in certain scenes.
+• Some instabilities.
+
+#The Set wallpaper button is missing!
+It only shows up when the wallpaper is not set.
+
+# Why isn’t the weather updating in real time?
+To save battery and data, the app doesn’t constantly check for weather changes.
+It updates at regular intervals, from 5 minutes to 5 hours.
+
+# Why doesn’t it snow or rain all the time when it’s snowing or raining outside?
+Weather animations only appear when certain conditions are met (like precipitation type, intensity, and daylight).
+If your weather source reports “cloudy” instead of “snow,” or if it’s light rain, the app may choose to show clouds for visual clarity.
+
+# Why is sunrise or sunset shifted by about one hour?
+This can happen if the weather provider detects a nearby city or region that's in a different time zone, especially near borders.
+The app relies on the weather API’s location data for sunrise and sunset times. If that data comes from a weather station in a neighboring region or country with a different time zone, the times may be off by about an hour.
+This isn’t a bug in the app but a limitation in how location-based weather data is sometimes matched by external services.
+
+# I think it is draining my battery!
+The app is optimized for minimal battery use.
+It runs at a reduced frame rate when the scene is not in motion and shuts down when the screen is off. It also uses precomputed elements when possible.
+In power saving mode, it further limits animations and updates.
+

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<vector android:height="21.62dp"
+        android:width="62.6dp"
+        android:viewportWidth="62.6"
+        android:viewportHeight="21.62" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+  <path android:fillColor="@drawable/$small_cloud1__0"
+        android:pathData="M0.09,19.62c1.42,2.13 5.06,0.36 12.42,1.24a112.05,112.05 0,0 0,16.5 0.59c5.25,-0.25 15.08,0.5 24.43,0 0,0 9.29,-0.61 9.15,-0.92 -0.91,-2 -3.91,-4.66 -12.5,-3.5 0,0 1.06,-2.83 -1.41,-6.25 -1.8,-2.48 -6.25,-1.5 -6.25,-1.5 2.5,-7 -12.72,-14.64 -17.17,-4.08 0,0 -6.65,-1 -9.65,0.6 -5.46,3 -7,10.32 -7,10.32C1.93,15.75 -0.52,18.7 0.09,19.62Z" />
+</vector>

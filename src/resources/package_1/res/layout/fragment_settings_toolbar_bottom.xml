@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:gravity="bottom"
+              android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="@dimen/toolbar_heigh"
+              android:layout_marginBottom="@dimen/short_margin"
+              android:layout_alignParentBottom="true"
+              android:layout_marginStart="@dimen/toolbar_padding"
+              android:layout_marginEnd="@dimen/toolbar_padding" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:chillwallpaperproject="http://schemas.android.com/apk/res-auto">
+  <TextView android:id="@id/toolbar_modes_button"
+            android:text="@string/ModeCategoryTitle"
+            chillwallpaperproject:drawableTopCompat="@drawable/gear_toggle_icon"
+            style="@style/Widget.Chill.TextView.Toolbar.TextView" />
+  <TextView android:id="@id/toolbar_weather_button"
+            android:text="@string/weatherCategoryTitle"
+            chillwallpaperproject:drawableTopCompat="@drawable/toolbar_weather_toggle_icon"
+            style="@style/Widget.Chill.TextView.Toolbar.TextView" />
+  <TextView android:id="@id/hideButton"
+            android:text="@string/toolbar_hide"
+            chillwallpaperproject:drawableTopCompat="@drawable/visible_toggle_icon"
+            style="@style/Widget.Chill.TextView.Toolbar.TextView" />
+  <TextView android:id="@id/toolbar_scenes_button"
+            android:background="@drawable/responsive_button"
+            android:text="@string/toolbar_landscapes"
+            chillwallpaperproject:drawableTopCompat="@drawable/landscape_toggle_icon"
+            style="@style/Widget.Chill.TextView.Toolbar.TextView" />
+  <TextView android:text="@string/toolbar_toggle"
+            chillwallpaperproject:drawableTopCompat="@drawable/layers_toggle_icon"
+            style="@style/Widget.Chill.TextView.Toolbar.TextView" />
+</LinearLayout>

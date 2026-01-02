@@ -1,0 +1,12 @@
+I develop this app in my free time as a hobby, and this roadmap reflects some of my current ideas.
+It is provided for informational purposes only and does not represent a firm commitment.
+Features, timelines, and even pricing may change without notice.
+Thanks for your understanding and support!
+
+• New scenes and scene variations.
+• New animations (birds, hot air balloon, spaceships in selected scenes, more particles, etc).
+• More tree, cloud types.
+• More weather types (snow storm, blizzard, hail, fog, etc).
+• More personalisation (location, weather providers, animations, etc).
+• More special events and Easter Eggs.
+• Who knows!

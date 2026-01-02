@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="vertical"
+              android:id="@id/modes_layout"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:chillwallpaperproject="http://schemas.android.com/apk/res-auto">
+  <LinearLayout android:orientation="vertical"
+                android:id="@id/modes_layout_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+    <LinearLayout android:id="@id/swipe_switch_layout"
+                  android:background="@drawable/transparent_ripple_button_bottom_sheet"
+                  style="@style/Widget.Chill.LinearLayout.ListItem.TwoLine.Clickable.More">
+      <ImageView android:id="@id/swipe_icon"
+                 android:src="@drawable/swipe_icon"
+                 style="@style/Widget.Chill.ImageView.ListItem.Icon" />
+      <LinearLayout style="@style/Widget.Chill.LinearLayout.ListItem.TextBox.Stretch">
+        <TextView android:text="@string/swipe_title"
+                  style="@style/Widget.Chill.TextView.ListItem.Title" />
+        <TextView android:text="@string/swipeEnableSummary"
+                  style="@style/Widget.Chill.TextView.ListItem.Description" />
+      </LinearLayout>
+      <com.google.android.material.materialswitch.MaterialSwitch android:id="@id/swipe_switch"
+                            android:checked="true"
+                            style="@style/Widget.Chill.Switch" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/tilt_switch_layout"
+                  android:background="@drawable/transparent_ripple_button_bottom_sheet"
+                  style="@style/Widget.Chill.LinearLayout.ListItem.TwoLine.Clickable.More">
+      <ImageView android:id="@id/tilt_icon"
+                 android:src="@drawable/tilt_icon"
+                 style="@style/Widget.Chill.ImageView.ListItem.Icon" />
+      <LinearLayout style="@style/Widget.Chill.LinearLayout.ListItem.TextBox.Stretch">
+        <TextView android:text="@string/parallax_title"
+                  style="@style/Widget.Chill.TextView.ListItem.Title" />
+        <TextView android:text="@string/parallax_summary"
+                  style="@style/Widget.Chill.TextView.ListItem.Description" />
+      </LinearLayout>
+      <com.google.android.material.materialswitch.MaterialSwitch android:id="@id/tilt_switch"
+                            android:checked="true"
+                            style="@style/Widget.Chill.Switch" />
+    </LinearLayout>
+    <LinearLayout android:background="@drawable/transparent_ripple_button_bottom_sheet"
+                  style="@style/Widget.Chill.LinearLayout.ListItem.TwoLine.Clickable.More">
+      <ImageView android:src="@drawable/speed_icon"
+                 style="@style/Widget.Chill.ImageView.ListItem.Icon" />
+      <LinearLayout style="@style/Widget.Chill.LinearLayout.ListItem.TextBox.Stretch">
+        <TextView android:text="@string/swipe_sensitivity_title"
+                  style="@style/Widget.Chill.TextView.ListItem.Title" />
+      </LinearLayout>
+    </LinearLayout>
+    <com.google.android.material.slider.Slider android:value="40"
+                          android:id="@id/slider_swipe_sensitivity"
+                          android:stepSize="0.0"
+                          android:valueFrom="0"
+                          android:valueTo="100"
+                          android:layout_marginStart="35.0dp"
+                          android:layout_marginEnd="14.0dp"
+                          style="@style/Widget.Chill.Slider" />
+    <TextView android:text="@string/advancedSettingsBatterySaver"
+              style="@style/Widget.Chill.TextView.Category" />
+    <LinearLayout android:id="@id/power_saving_1_layout"
+                  android:background="@drawable/transparent_ripple_button_bottom_sheet"
+                  style="@style/Widget.Chill.LinearLayout.ListItem.TwoLine.Clickable.More">
+      <ImageView android:id="@id/power_saving_icon"
+                 android:src="@drawable/battery_saver_icon"
+                 style="@style/Widget.Chill.ImageView.ListItem.Icon" />
+      <LinearLayout style="@style/Widget.Chill.LinearLayout.ListItem.TextBox.Stretch">
+        <TextView android:text="@string/advancedSettingsBatterySaver"
+                  style="@style/Widget.Chill.TextView.ListItem.Title" />
+        <TextView android:text="@string/batterySaverSummary"
+                  style="@style/Widget.Chill.TextView.ListItem.Description" />
+      </LinearLayout>
+      <com.google.android.material.materialswitch.MaterialSwitch android:id="@id/power_saving_switch"
+                            android:visibility="gone"
+                            style="@style/Widget.Chill.Switch" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+      <com.google.android.material.button.MaterialButtonToggleGroup android:id="@id/power_saving_group"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="40.0dp"
+                            android:paddingEnd="16.0dp"
+                            chillwallpaperproject:selectionRequired="true"
+                            chillwallpaperproject:singleSelection="true">
+        <com.google.android.material.button.MaterialButton android:id="@id/power_saving_on"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="@string/powerSavingOn"
+                              style="@style/Widget.Chill.Button.OutlinedButton" />
+        <com.google.android.material.button.MaterialButton android:id="@id/power_saving_auto"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="@string/powerSavingAuto"
+                              style="@style/Widget.Chill.Button.OutlinedButton" />
+        <com.google.android.material.button.MaterialButton android:id="@id/power_saving_off"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="@string/powerSavingOff"
+                              style="@style/Widget.Chill.Button.OutlinedButton" />
+      </com.google.android.material.button.MaterialButtonToggleGroup>
+      <ImageButton android:layout_gravity="center"
+                   android:id="@id/power_saving_tooltip"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/tooltip_icon"
+                   android:backgroundTint="@color/transparent" />
+    </LinearLayout>
+    <com.google.android.material.slider.Slider android:value="20"
+                          android:id="@id/slider_power_saver"
+                          android:stepSize="0.0"
+                          android:valueFrom="5"
+                          android:valueTo="100"
+                          android:layout_marginStart="35.0dp"
+                          android:layout_marginEnd="14.0dp"
+                          style="@style/Widget.Chill.Slider" />
+  </LinearLayout>
+</LinearLayout>

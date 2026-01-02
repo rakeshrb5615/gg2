@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="vertical"
+              android:background="@android:color/transparent"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+  <TextView android:textSize="16.0sp"
+            android:padding="@dimen/layout_padding"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/feedback"
+            android:lineSpacingMultiplier="1.2"
+            android:fontFamily="@font/jost_book" />
+  <ScrollView android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:nestedScrollingEnabled="true">
+    <LinearLayout android:gravity="start"
+                  android:orientation="vertical"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+      <LinearLayout android:id="@id/contact_me_layout"
+                    android:background="@drawable/transparent_ripple_button_bottom_sheet"
+                    style="@style/Widget.Chill.LinearLayout.ListItem.TwoLine.Clickable.More">
+        <ImageView android:src="@drawable/email_icon"
+                   style="@style/Widget.Chill.ImageView.ListItem.Icon" />
+        <LinearLayout style="@style/Widget.Chill.LinearLayout.ListItem.TextBox.Stretch">
+          <TextView android:text="@string/email_me"
+                    style="@style/Widget.Chill.TextView.ListItem.Title" />
+          <TextView android:text="@string/email_me_sub"
+                    style="@style/Widget.Chill.TextView.ListItem.Description" />
+        </LinearLayout>
+      </LinearLayout>
+      <LinearLayout android:id="@id/rate_me_layout"
+                    android:background="@drawable/transparent_ripple_button_bottom_sheet"
+                    style="@style/Widget.Chill.LinearLayout.ListItem.TwoLine.Clickable.More">
+        <ImageView android:id="@id/rate_me_image_imageview"
+                   android:src="@drawable/star_icon"
+                   style="@style/Widget.Chill.ImageView.ListItem.Icon" />
+        <LinearLayout style="@style/Widget.Chill.LinearLayout.ListItem.TextBox.Stretch">
+          <TextView android:text="@string/rate_me"
+                    style="@style/Widget.Chill.TextView.ListItem.Title" />
+          <TextView android:text="@string/rate_me_sub"
+                    style="@style/Widget.Chill.TextView.ListItem.Description" />
+        </LinearLayout>
+      </LinearLayout>
+      <LinearLayout android:id="@id/play_store_layout"
+                    android:background="@drawable/transparent_ripple_button_bottom_sheet"
+                    style="@style/Widget.Chill.LinearLayout.ListItem.TwoLine.Clickable.More">
+        <ImageView android:id="@id/play_store_imageview"
+                   android:src="@drawable/play_store_icon"
+                   style="@style/Widget.Chill.ImageView.ListItem.Icon" />
+        <LinearLayout style="@style/Widget.Chill.LinearLayout.ListItem.TextBox.Stretch">
+          <TextView android:text="@string/visit_store"
+                    style="@style/Widget.Chill.TextView.ListItem.Title" />
+          <TextView android:text="@string/visit_store_sub"
+                    style="@style/Widget.Chill.TextView.ListItem.Description" />
+        </LinearLayout>
+      </LinearLayout>
+      <LinearLayout android:id="@id/share_layout"
+                    android:background="@drawable/transparent_ripple_button_bottom_sheet"
+                    style="@style/Widget.Chill.LinearLayout.ListItem.TwoLine.Clickable.More">
+        <ImageView android:id="@id/share_imageview"
+                   android:src="@drawable/share_icon"
+                   style="@style/Widget.Chill.ImageView.ListItem.Icon" />
+        <LinearLayout style="@style/Widget.Chill.LinearLayout.ListItem.TextBox.Stretch">
+          <TextView android:text="@string/share"
+                    style="@style/Widget.Chill.TextView.ListItem.Title" />
+          <TextView android:text="@string/share_sub"
+                    style="@style/Widget.Chill.TextView.ListItem.Description" />
+        </LinearLayout>
+      </LinearLayout>
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>

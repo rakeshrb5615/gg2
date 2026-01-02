@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<vector android:height="28.28dp"
+        android:width="995.0dp"
+        android:viewportWidth="995.0"
+        android:viewportHeight="28.28" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+  <path android:fillColor="@drawable/$distant_cloud__0"
+        android:pathData="M0,18.85q172.92,-10 346,-14.67Q670.2,-4.61 995,5.1C869.78,9.68 820.55,14.37 754,17.78 533.56,29.07 451,29.12 322.19,27.56 202.22,26.1 58.58,25.24 0,18.85Z"
+        android:strokeAlpha="0.25"
+        android:fillAlpha="0.25" />
+</vector>

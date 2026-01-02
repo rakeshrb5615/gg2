@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <integer-array name="autumnDayColors">
+    <item>0</item>
+    <item>20</item>
+    <item>30</item>
+  </integer-array>
+  <integer-array name="autumnSunriseColors">
+    <item>0</item>
+    <item>20</item>
+    <item>30</item>
+  </integer-array>
+  <integer-array name="autumnSunsetColors">
+    <item>0</item>
+    <item>20</item>
+    <item>30</item>
+  </integer-array>
+  <integer-array name="cloudCityDay">
+    <item>10</item>
+    <item>4</item>
+    <item>0</item>
+  </integer-array>
+  <integer-array name="cloudCitySunrise">
+    <item>0</item>
+    <item>15</item>
+    <item>0</item>
+  </integer-array>
+  <integer-array name="cloudCitySunset">
+    <item>0</item>
+    <item>7</item>
+    <item>0</item>
+  </integer-array>
+  <array name="day_Mist_colors">
+    <item>@color/mistDayTop</item>
+    <item>@color/mistDayMid</item>
+    <item>@color/mistDayBot</item>
+  </array>
+  <array name="day_Overcast_colors">
+    <item>@color/overcastDayTop</item>
+    <item>@color/overcastDayMid</item>
+    <item>@color/overcastDayBot</item>
+  </array>
+  <array name="day_Snow_colors">
+    <item>@color/snowDayTop</item>
+    <item>@color/snowDayMid</item>
+    <item>@color/snowDayBot</item>
+  </array>
+  <array name="day_gradient_colors">
+    <item>@color/noonTop</item>
+    <item>@color/noonMid</item>
+    <item>@color/noonBot</item>
+  </array>
+  <array name="day_gradient_colors_monoliths_autumn">
+    <item>@color/noonTopMonolithsAutumn</item>
+    <item>@color/noonMidMonolithsAutumn</item>
+    <item>@color/noonBotMonolithsAutumn</item>
+  </array>
+  <array name="day_gradient_colors_monoliths_spring">
+    <item>@color/noonTopMonolithsSpring</item>
+    <item>@color/noonMidMonolithsSpring</item>
+    <item>@color/noonBotMonolithsSpring</item>
+  </array>
+  <array name="day_gradient_colors_monoliths_summer">
+    <item>@color/noonTopMonolithsSummer</item>
+    <item>@color/noonMidMonolithsSummer</item>
+    <item>@color/noonBotMonolithsSummer</item>
+  </array>
+  <array name="day_gradient_colors_monoliths_winter">
+    <item>@color/noonTopMonolithsWinter</item>
+    <item>@color/noonMidMonolithsWinter</item>
+    <item>@color/noonBotMonolithsWinter</item>
+  </array>
+  <array name="day_gradient_colors_winter">
+    <item>@color/noonTopWinter</item>
+    <item>@color/noonMidWinter</item>
+    <item>@color/noonBotWinter</item>
+  </array>
+  <integer-array name="duneDay">
+    <item>10</item>
+    <item>25</item>
+    <item>35</item>
+  </integer-array>
+  <integer-array name="duneSunrise">
+    <item>25</item>
+    <item>55</item>
+    <item>50</item>
+  </integer-array>
+  <integer-array name="duneSunset">
+    <item>10</item>
+    <item>40</item>
+    <item>35</item>
+  </integer-array>
+  <array name="night_Mist_colors">
+    <item>@color/mistNightTop</item>
+    <item>@color/mistNightMid</item>
+    <item>@color/mistNightBot</item>
+  </array>
+  <array name="night_Overcast_colors">
+    <item>@color/overcastNightTop</item>
+    <item>@color/overcastNightMid</item>
+    <item>@color/overcastNightBot</item>
+  </array>
+  <array name="night_Snow_colors">
+    <item>@color/snowNightTop</item>
+    <item>@color/snowNightMid</item>
+    <item>@color/snowNightBot</item>
+  </array>
+  <array name="night_gradient_colors">
+    <item>@color/nightTop</item>
+    <item>@color/nightMid</item>
+    <item>@color/nightBot</item>
+  </array>
+  <array name="night_gradient_colors3">
+    <item>@color/nightTopMonoliths</item>
+    <item>@color/nightMidMonoliths</item>
+    <item>@color/nightBotMonoliths</item>
+  </array>
+  <array name="seasonSelection">
+    <item>@string/seasonList0</item>
+    <item>@string/seasonList1</item>
+    <item>@string/seasonList2</item>
+    <item>@string/seasonList3</item>
+    <item>@string/seasonList4</item>
+  </array>
+  <integer-array name="springDayColors">
+    <item>25</item>
+    <item>10</item>
+    <item>35</item>
+  </integer-array>
+  <integer-array name="springSunriseColors">
+    <item>15</item>
+    <item>20</item>
+    <item>5</item>
+  </integer-array>
+  <integer-array name="springSunsetColors">
+    <item>16</item>
+    <item>20</item>
+    <item>7</item>
+  </integer-array>
+  <integer-array name="summerDayColors">
+    <item>35</item>
+    <item>20</item>
+    <item>30</item>
+  </integer-array>
+  <integer-array name="summerSunriseColors">
+    <item>15</item>
+    <item>20</item>
+    <item>5</item>
+  </integer-array>
+  <integer-array name="summerSunsetColors">
+    <item>16</item>
+    <item>20</item>
+    <item>7</item>
+  </integer-array>
+  <array name="sunrise_Mist_colors">
+    <item>@color/mistSunriseTop</item>
+    <item>@color/mistSunriseMid</item>
+    <item>@color/mistSunriseBot</item>
+  </array>
+  <array name="sunrise_Mist_colors3">
+    <item>@color/mistSunriseTop3</item>
+    <item>@color/mistSunriseMid3</item>
+    <item>@color/mistSunriseBot3</item>
+  </array>
+  <array name="sunrise_Overcast_colors">
+    <item>@color/overcastSunriseTop</item>
+    <item>@color/overcastSunriseMid</item>
+    <item>@color/overcastSunriseBot</item>
+  </array>
+  <array name="sunrise_Snow_colors">
+    <item>@color/snowSunriseTop</item>
+    <item>@color/snowSunriseMid</item>
+    <item>@color/snowSunriseBot</item>
+  </array>
+  <array name="sunrise_gradient_colors">
+    <item>@color/sunriseTop</item>
+    <item>@color/sunriseMid</item>
+    <item>@color/sunriseBot</item>
+  </array>
+  <array name="sunrise_gradient_colors3">
+    <item>@color/sunriseTopMonoliths</item>
+    <item>@color/sunriseMidMonoliths</item>
+    <item>@color/sunriseBotMonoliths</item>
+  </array>
+  <array name="sunrise_gradient_colors_winter">
+    <item>@color/sunriseTopWinter</item>
+    <item>@color/sunriseMidWinter</item>
+    <item>@color/sunriseBotWinter</item>
+  </array>
+  <array name="sunset_Mist_colors">
+    <item>@color/mistSunsetTop</item>
+    <item>@color/mistSunsetMid</item>
+    <item>@color/mistSunsetBot</item>
+  </array>
+  <array name="sunset_Mist_colors3">
+    <item>@color/mistSunsetTop3</item>
+    <item>@color/mistSunsetMid3</item>
+    <item>@color/mistSunsetBot3</item>
+  </array>
+  <array name="sunset_gradient_colors">
+    <item>@color/sunsetTop</item>
+    <item>@color/sunsetMid</item>
+    <item>@color/sunsetBot</item>
+  </array>
+  <array name="sunset_gradient_colors3">
+    <item>@color/sunsetTopMonoliths</item>
+    <item>@color/sunsetMidMonoliths</item>
+    <item>@color/sunsetBotMonoliths</item>
+  </array>
+  <array name="sunset_gradient_colors_ocean">
+    <item>@color/sunsetTopOcean</item>
+    <item>@color/sunsetMidOcean</item>
+    <item>@color/sunsetBotOcean</item>
+  </array>
+  <array name="sunset_gradient_colors_winter">
+    <item>@color/sunsetTopWinter</item>
+    <item>@color/sunsetMidWinter</item>
+    <item>@color/sunsetBotWinter</item>
+  </array>
+</resources>

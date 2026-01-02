@@ -1,0 +1,36 @@
+#Comment fonctionne cette application ?
+Au fil des années, et après des milliers d’heures de travail, j’ai transformé ce simple fond d’écran animé en une véritable expérience météo : une œuvre numérique vivante, qui évolue avec le temps.
+Pour continuer à l’améliorer et à fournir la météo en temps réel, j’utilise un fournisseur météo payant.
+Votre soutien permet au projet de continuer à fonctionner correctement.
+Merci pour tous vos retours et votre soutien !
+
+#☀️ La course du Soleil
+Dans la réalité, le Soleil suit des trajectoires différentes selon votre latitude et la saison de l’année.
+L’application reflète les heures de lever et de coucher du Soleil de votre position, vous permettant de le voir apparaître et disparaître au bon moment.
+Cependant, pour garder l’application légère, le Soleil ne suit pas précisément la même courbe qu’en vrai.
+Il se déplace plutôt sur une trajectoire simplifiée qui correspond au moment de la journée, pour donner une idée de la matinée, de l’après-midi ou du soir.
+La Lune suit la même logique.
+
+#🌙 Les phases et l'apparence de la Lune
+La Lune affichée dans le fond d’écran représente la phase lunaire réelle, passant de la nouvelle lune à la pleine lune au fil du mois (si "Ma Position" est activée).
+Cependant, elle n’apparaît pas toujours la nuit.
+Pourquoi ? En réalité, la position de la Lune change chaque jour : elle peut être visible en journée ou absente du ciel nocturne selon sa phase et son orbite.
+
+#🌳 Vent et animation des arbres
+Lorsque la vitesse du vent augmente dans vos données météo, les arbres de la scène bougent plus visiblement.
+Cette animation ne reflète pas exactement la direction du vent ou les rafales ; c’est un indicateur visuel destiné à donner une impression de mouvement et d’ambiance sans consommer trop de batterie.
+
+#☁️ Nuages et effets météo
+L’application utilise plusieurs couches de nuages vectoriels, de pluie ou de neige selon les conditions météo. Les types de nuages et leur densité varient selon « partiellement nuageux », « couvert », etc.
+La vitesse et la densité de la pluie et de la neige changent également, mais restent subtiles pour ne pas dominer la scène.
+
+#🌅 Génération de scènes et croissance organique
+Tous les éléments visuels sont dessinés par mes soins, mais l’application est conçue pour générer les scènes de manière procédurale.
+Ainsi, des éléments comme les arbres, les collines ou les étoiles sont recréés automatiquement à chaque génération.
+Chaque instance varie légèrement en taille, en forme et en position, ce qui rend le paysage plus naturel et moins répétitif.
+Plutôt que d’afficher une image fixe, l’application construit la scène dynamiquement à chaque lancement. Vous pouvez donc remarquer de petites différences au fil des jours ou des semaines, même si la météo reste la même.
+Oui, chaque paysage produit par l’application est véritablement unique : je crée tous les éléments… et le code leur donne vie.
+
+#✨ Pourquoi certaines choses sont simplifiées
+Calculer des positions astronomiques exactes ou un ciel en temps réel demanderait trop de puissance de calcul et de batterie.
+L’application fait donc un compromis entre réalisme et efficacité, pour offrir une expérience fluide, esthétique, et tout de même liée aux changements du monde réel.

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<vector android:height="60.79dp"
+        android:width="54.87dp"
+        android:viewportWidth="54.87"
+        android:viewportHeight="60.79" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+  <path android:fillColor="@drawable/$tree1_1__0"
+        android:pathData="M27.08,46C24,47.53 24.9,43.37 22.6,41.89c-0.53,1.16 -2,2 -1.69,3.1 2.25,8.72 -1,13.5 0.63,14.83 1.9,1.55 3.82,1.09 5.78,-0.27 1.52,-1.36 -4.48,-5.14 4.86,-13.9 2.48,-2.33 -3.13,-1.07 -5.1,0.36" />
+  <path android:fillColor="#f2f2f2"
+        android:pathData="M12.24,10.39a14.28,10.39 0,1 0,28.56 0a14.28,10.39 0,1 0,-28.56 0z" />
+  <path android:fillColor="@drawable/$tree1_1__1"
+        android:pathData="M28.73,15.83c-6.35,0 -11.65,4.07 -13,9.5a10.13,10.13 0,0 0,-6.26 -2.11C4.25,23.22 0,27 0,31.68s4.25,8.46 9.49,8.46a9.64,9.64 0,0 0,8.6 -4.89,13.7 13.7,0 0,0 10.64,4.89C36.08,40.14 42,34.69 42,28S36.08,15.83 28.73,15.83Z" />
+  <path android:fillColor="#f4f4f4"
+        android:pathData="M2.88,39.33a7.92,7.05 0,1 0,15.84 0a7.92,7.05 0,1 0,-15.84 0z" />
+  <path android:fillColor="@drawable/$tree1_1__2"
+        android:pathData="M8.94,40.38a7.92,7.05 0,1 0,15.84 0a7.92,7.05 0,1 0,-15.84 0z" />
+  <path android:fillColor="#f4f4f4"
+        android:pathData="M31.15,15.16a8.28,8.06 0,1 0,16.56 0a8.28,8.06 0,1 0,-16.56 0z" />
+  <path android:fillColor="@drawable/$tree1_1__3"
+        android:pathData="M34.71,26.66a10.08,10.83 0,1 0,20.16 0a10.08,10.83 0,1 0,-20.16 0z" />
+  <path android:fillColor="@drawable/$tree1_1__4"
+        android:pathData="M44.6,30.05c-4,0 -7.21,2.86 -7.21,6.39v0.1a6.88,6.88 0,0 0,-1.13 -0.1,5.42 5.42,0 1,0 0,10.81A5.66,5.66 0,0 0,42 42.4a8.13,8.13 0,0 0,2.59 0.43c4,0 7.22,-2.86 7.22,-6.39S48.59,30.05 44.6,30.05Z" />
+  <path android:fillColor="#f4f4f4"
+        android:pathData="M28.07,38.91m-6.63,0a6.63,6.63 0,1 1,13.26 0a6.63,6.63 0,1 1,-13.26 0" />
+  <path android:fillColor="#f4f4f4"
+        android:pathData="M23.33,19.39a8.27,7.63 0,1 0,16.54 0a8.27,7.63 0,1 0,-16.54 0z" />
+  <path android:fillColor="#f7f7f7"
+        android:pathData="M31.6,10.7c0,-4.15 -3.74,-7.51 -8.34,-7.51a8.29,8.29 0,0 0,-8 5.27C8.72,8.61 3.43,13.3 3.43,19.08S8.89,29.72 15.62,29.72 27.82,25 27.82,19.08a9.22,9.22 0,0 0,-0.22 -2A7.39,7.39 0,0 0,31.6 10.7Z" />
+</vector>

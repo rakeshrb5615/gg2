@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/short_margin"
+              android:minHeight="@dimen/toolbar_heigh"
+              android:layout_alignParentTop="true"
+              android:layout_marginStart="@dimen/short_margin"
+              android:layout_marginEnd="@dimen/short_margin" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:chillwallpaperproject="http://schemas.android.com/apk/res-auto">
+  <TextView android:layout_gravity="top"
+            android:id="@id/top_toolbar_simple_settings_button"
+            android:text="@string/toolbar_top_simple_settings"
+            android:drawablePadding="@dimen/toolbar_drawable_padding"
+            chillwallpaperproject:drawableBottomCompat="@drawable/toolbar_top_simple_settings_toggle_icon"
+            style="@style/Widget.Chill.TextView.Toolbar.TextView" />
+  <TextView android:layout_gravity="top"
+            android:id="@id/top_toolbar_store_button"
+            android:text="@string/store"
+            android:onClick="onClickStoreButton"
+            chillwallpaperproject:drawableBottomCompat="@drawable/store_toggle_icon"
+            style="@style/Widget.Chill.TextView.Toolbar.TextView" />
+</LinearLayout>

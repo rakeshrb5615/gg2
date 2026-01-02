@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<ScrollView android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:nestedScrollingEnabled="true" xmlns:android="http://schemas.android.com/apk/res/android">
+  <LinearLayout android:gravity="start"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+    <TextView android:padding="@dimen/layout_padding"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/settings_help_description"
+              style="@style/Widget.Chill.TextView.ListItem.Title" />
+    <LinearLayout android:gravity="start"
+                  android:orientation="horizontal"
+                  android:background="@drawable/transparent_ripple_button_bottom_sheet"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+      <ImageView android:layout_gravity="center"
+                 android:id="@id/manual_color_imageview"
+                 android:layout_width="@dimen/other_button_size_small"
+                 android:layout_height="@dimen/other_button_size_small"
+                 android:src="@drawable/live_colors_on_icon"
+                 android:layout_marginStart="@dimen/layout_padding" />
+      <LinearLayout android:gravity="start"
+                    android:orientation="vertical"
+                    android:padding="@dimen/layout_padding"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+        <TextView android:orientation="vertical"
+                  android:text="@string/live_colors_title"
+                  style="@style/Widget.Chill.TextView.ListItem.Title" />
+        <TextView android:text="@string/live_colors_description"
+                  style="@style/Widget.Chill.TextView.ListItem.Description" />
+      </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="start"
+                  android:orientation="horizontal"
+                  android:background="@drawable/transparent_ripple_button_bottom_sheet"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+      <ImageView android:layout_gravity="center"
+                 android:layout_width="@dimen/other_button_size_small"
+                 android:layout_height="@dimen/other_button_size_small"
+                 android:src="@drawable/sunrise_icon"
+                 android:layout_marginStart="@dimen/layout_padding" />
+      <LinearLayout android:gravity="start"
+                    android:orientation="vertical"
+                    android:padding="@dimen/layout_padding"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+        <TextView android:orientation="vertical"
+                  android:text="@string/sunriseTimeTitle"
+                  style="@style/Widget.Chill.TextView.ListItem.Title" />
+        <TextView android:text="@string/sunrise_description"
+                  style="@style/Widget.Chill.TextView.ListItem.Description" />
+      </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="start"
+                  android:orientation="horizontal"
+                  android:background="@drawable/transparent_ripple_button_bottom_sheet"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+      <ImageView android:layout_gravity="center"
+                 android:layout_width="@dimen/other_button_size_small"
+                 android:layout_height="@dimen/other_button_size_small"
+                 android:src="@drawable/sunset_icon"
+                 android:layout_marginStart="@dimen/layout_padding" />
+      <LinearLayout android:gravity="start"
+                    android:orientation="vertical"
+                    android:padding="@dimen/layout_padding"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+        <TextView android:orientation="vertical"
+                  android:text="@string/sunsetTimeTitle"
+                  style="@style/Widget.Chill.TextView.ListItem.Title" />
+        <TextView android:text="@string/sunset_description"
+                  style="@style/Widget.Chill.TextView.ListItem.Description" />
+      </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="start"
+                  android:orientation="horizontal"
+                  android:background="@drawable/transparent_ripple_button_bottom_sheet"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+      <ImageView android:layout_gravity="center"
+                 android:layout_width="@dimen/other_button_size_small"
+                 android:layout_height="@dimen/other_button_size_small"
+                 android:src="@drawable/shuffle_toggle_icon"
+                 android:layout_marginStart="@dimen/layout_padding" />
+      <LinearLayout android:gravity="start"
+                    android:orientation="vertical"
+                    android:padding="@dimen/layout_padding"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+        <TextView android:orientation="vertical"
+                  android:text="@string/randomTimeTitle"
+                  style="@style/Widget.Chill.TextView.ListItem.Title" />
+        <TextView android:text="@string/randomTimeDescription"
+                  style="@style/Widget.Chill.TextView.ListItem.Description" />
+      </LinearLayout>
+    </LinearLayout>
+  </LinearLayout>
+</ScrollView>

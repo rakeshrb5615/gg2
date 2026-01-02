@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="vertical"
+              android:id="@id/effects_layout"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+  <TextView android:text="@string/effects_title"
+            style="@style/Widget.Chill.TextView.Category" />
+  <TextView android:text="@string/toggle_weather_title"
+            style="@style/Widget.Chill.TextView.Category" />
+  <LinearLayout android:id="@id/toggle_precip"
+                android:background="@drawable/transparent_ripple_button_bottom_sheet"
+                style="@style/Widget.Chill.LinearLayout.ListItem.TwoLine.Clickable">
+    <ImageView android:src="@drawable/precip_on_icon"
+               style="@style/Widget.Chill.ImageView.ListItem.Icon" />
+    <LinearLayout style="@style/Widget.Chill.LinearLayout.ListItem.TextBox.Stretch">
+      <TextView android:text="@string/toggle_precipitations_title"
+                style="@style/Widget.Chill.TextView.ListItem.Title" />
+    </LinearLayout>
+    <com.google.android.material.materialswitch.MaterialSwitch android:id="@id/precipitation_switch"
+                          android:checked="true"
+                          style="@style/Widget.Chill.Switch" />
+  </LinearLayout>
+  <LinearLayout android:background="@drawable/transparent_ripple_button_bottom_sheet"
+                style="@style/Widget.Chill.LinearLayout.ListItem.TwoLine.Clickable">
+    <ImageView android:src="@drawable/bolt_on_icon"
+               style="@style/Widget.Chill.ImageView.ListItem.Icon" />
+    <LinearLayout style="@style/Widget.Chill.LinearLayout.ListItem.TextBox.Stretch">
+      <TextView android:text="@string/toggle_thunder_title"
+                style="@style/Widget.Chill.TextView.ListItem.Title" />
+    </LinearLayout>
+    <com.google.android.material.materialswitch.MaterialSwitch android:id="@id/thunder_switch"
+                          android:checked="true"
+                          style="@style/Widget.Chill.Switch" />
+  </LinearLayout>
+  <LinearLayout android:id="@id/toggle_rainbow"
+                android:background="@drawable/transparent_ripple_button_bottom_sheet"
+                style="@style/Widget.Chill.LinearLayout.ListItem.TwoLine.Clickable">
+    <ImageView android:src="@drawable/rainbow_on_icon"
+               style="@style/Widget.Chill.ImageView.ListItem.Icon" />
+    <LinearLayout style="@style/Widget.Chill.LinearLayout.ListItem.TextBox.Stretch">
+      <TextView android:text="@string/toggle_rainbow_title"
+                style="@style/Widget.Chill.TextView.ListItem.Title" />
+    </LinearLayout>
+    <com.google.android.material.materialswitch.MaterialSwitch android:id="@id/rainbow_switch"
+                          android:checked="true"
+                          style="@style/Widget.Chill.Switch" />
+  </LinearLayout>
+  <TextView android:text="@string/skyTitle"
+            style="@style/Widget.Chill.TextView.Category" />
+  <LinearLayout android:background="@drawable/transparent_ripple_button_bottom_sheet"
+                style="@style/Widget.Chill.LinearLayout.ListItem.TwoLine.Clickable">
+    <ImageView android:src="@drawable/sunny_on_icon"
+               style="@style/Widget.Chill.ImageView.ListItem.Icon" />
+    <LinearLayout style="@style/Widget.Chill.LinearLayout.ListItem.TextBox.Stretch">
+      <TextView android:text="@string/toggle_sun_title"
+                style="@style/Widget.Chill.TextView.ListItem.Title" />
+    </LinearLayout>
+    <com.google.android.material.materialswitch.MaterialSwitch android:id="@id/sun_switch"
+                          android:checked="true"
+                          style="@style/Widget.Chill.Switch" />
+  </LinearLayout>
+  <LinearLayout android:id="@id/toggle_moon"
+                android:background="@drawable/transparent_ripple_button_bottom_sheet"
+                style="@style/Widget.Chill.LinearLayout.ListItem.TwoLine.Clickable">
+    <ImageView android:src="@drawable/moon_on_icon"
+               style="@style/Widget.Chill.ImageView.ListItem.Icon" />
+    <LinearLayout style="@style/Widget.Chill.LinearLayout.ListItem.TextBox.Stretch">
+      <TextView android:text="@string/toggle_moon_title"
+                style="@style/Widget.Chill.TextView.ListItem.Title" />
+    </LinearLayout>
+    <com.google.android.material.materialswitch.MaterialSwitch android:id="@id/moon_switch"
+                          android:checked="true"
+                          style="@style/Widget.Chill.Switch" />
+  </LinearLayout>
+  <LinearLayout android:id="@id/toggle_shooting_star"
+                android:background="@drawable/transparent_ripple_button_bottom_sheet"
+                style="@style/Widget.Chill.LinearLayout.ListItem.TwoLine.Clickable">
+    <ImageView android:src="@drawable/shooting_star_icon"
+               style="@style/Widget.Chill.ImageView.ListItem.Icon" />
+    <LinearLayout style="@style/Widget.Chill.LinearLayout.ListItem.TextBox.Stretch">
+      <TextView android:text="@string/toggle_shooting_star_title"
+                style="@style/Widget.Chill.TextView.ListItem.Title" />
+    </LinearLayout>
+    <com.google.android.material.materialswitch.MaterialSwitch android:id="@id/shooting_star_switch"
+                          android:checked="true"
+                          style="@style/Widget.Chill.Switch" />
+  </LinearLayout>
+  <TextView android:text="@string/toggle_effect_title"
+            style="@style/Widget.Chill.TextView.Category" />
+  <LinearLayout android:id="@id/toggle_particles"
+                android:background="@drawable/transparent_ripple_button_bottom_sheet"
+                style="@style/Widget.Chill.LinearLayout.ListItem.TwoLine.Clickable">
+    <ImageView android:src="@drawable/particles_icon"
+               style="@style/Widget.Chill.ImageView.ListItem.Icon" />
+    <LinearLayout style="@style/Widget.Chill.LinearLayout.ListItem.TextBox.Stretch">
+      <TextView android:text="@string/toggle_particles_title"
+                style="@style/Widget.Chill.TextView.ListItem.Title" />
+    </LinearLayout>
+    <com.google.android.material.materialswitch.MaterialSwitch android:id="@id/particles_switch"
+                          android:checked="true"
+                          style="@style/Widget.Chill.Switch" />
+  </LinearLayout>
+  <LinearLayout android:id="@id/toggle_wind_particles"
+                android:background="@drawable/transparent_ripple_button_bottom_sheet"
+                style="@style/Widget.Chill.LinearLayout.ListItem.TwoLine.Clickable">
+    <ImageView android:src="@drawable/airwaves_icon"
+               style="@style/Widget.Chill.ImageView.ListItem.Icon" />
+    <LinearLayout style="@style/Widget.Chill.LinearLayout.ListItem.TextBox.Stretch">
+      <TextView android:text="@string/toggle_wind_particles_title"
+                style="@style/Widget.Chill.TextView.ListItem.Title" />
+    </LinearLayout>
+    <com.google.android.material.materialswitch.MaterialSwitch android:id="@id/wind_particles_switch"
+                          android:checked="true"
+                          style="@style/Widget.Chill.Switch" />
+  </LinearLayout>
+  <LinearLayout android:id="@id/toggle_contrails"
+                android:background="@drawable/transparent_ripple_button_bottom_sheet"
+                style="@style/Widget.Chill.LinearLayout.ListItem.TwoLine.Clickable">
+    <ImageView android:src="@drawable/contrail_icon"
+               style="@style/Widget.Chill.ImageView.ListItem.Icon" />
+    <LinearLayout style="@style/Widget.Chill.LinearLayout.ListItem.TextBox.Stretch">
+      <TextView android:text="@string/toggle_contrails_title"
+                style="@style/Widget.Chill.TextView.ListItem.Title" />
+    </LinearLayout>
+    <com.google.android.material.materialswitch.MaterialSwitch android:id="@id/contrail_switch"
+                          android:checked="true"
+                          style="@style/Widget.Chill.Switch" />
+  </LinearLayout>
+  <LinearLayout android:id="@id/toggle_easter_eggs"
+                android:background="@drawable/transparent_ripple_button_bottom_sheet"
+                style="@style/Widget.Chill.LinearLayout.ListItem.TwoLine.Clickable">
+    <ImageView android:src="@drawable/question_mark_icon"
+               style="@style/Widget.Chill.ImageView.ListItem.Icon" />
+    <LinearLayout style="@style/Widget.Chill.LinearLayout.ListItem.TextBox.Stretch">
+      <TextView android:text="@string/toggle_easter_eggs_title"
+                style="@style/Widget.Chill.TextView.ListItem.Title" />
+    </LinearLayout>
+    <com.google.android.material.materialswitch.MaterialSwitch android:id="@id/easter_eggs_switch"
+                          android:checked="true"
+                          style="@style/Widget.Chill.Switch" />
+  </LinearLayout>
+</LinearLayout>

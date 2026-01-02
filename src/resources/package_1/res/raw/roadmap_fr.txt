@@ -1,0 +1,12 @@
+Je développe cette application sur mon temps libre, comme un hobby, et cette feuille de route reflète simplement quelques idées actuelles.
+Elle est fournie à titre informatif et ne constitue pas un engagement ferme.
+Les fonctionnalités, les délais et même les tarifs peuvent changer sans préavis.
+Merci pour votre compréhension et votre soutien !
+
+• De nouvelles scènes et variations de scènes
+• De nouvelles animations (oiseaux, montgolfière, vaisseaux spatiaux dans certaines scènes, plus de particules, etc.)
+• Plus de types d’arbres et de nuages
+• Plus de types de météo (tempête de neige, blizzard, grêle, brouillard, etc.)
+• Plus d’options de personnalisation (localisation, fournisseurs météo, animations, etc.)
+• Plus d’événements spéciaux et d’Easter Eggs
+• Et peut-être encore plus !

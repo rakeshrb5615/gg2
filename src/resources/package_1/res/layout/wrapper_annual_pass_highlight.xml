@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<androidx.constraintlayout.widget.ConstraintLayout android:clipChildren="false"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginEnd="@dimen/short_margin" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:chillwallpaperproject="http://schemas.android.com/apk/res-auto">
+  <include android:id="@id/card_annual_pass"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           chillwallpaperproject:layout_constraintBottom_toBottomOf="parent"
+           chillwallpaperproject:layout_constraintEnd_toEndOf="parent"
+           chillwallpaperproject:layout_constraintStart_toStartOf="parent"
+           chillwallpaperproject:layout_constraintTop_toTopOf="parent"
+           layout="@layout/card_annual_pass_highlight" />
+  <TextView android:textSize="11.0sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:id="@id/tv_best_value_tag"
+            android:background="@drawable/bg_card_features"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/c_p_d"
+            android:paddingHorizontal="12.0dp"
+            android:paddingVertical="4.0dp"
+            chillwallpaperproject:layout_constraintBottom_toTopOf="@id/card_annual_pass"
+            chillwallpaperproject:layout_constraintEnd_toEndOf="@id/card_annual_pass"
+            chillwallpaperproject:layout_constraintHorizontal_bias="0.5"
+            chillwallpaperproject:layout_constraintStart_toStartOf="@id/card_annual_pass"
+            chillwallpaperproject:layout_constraintTop_toTopOf="@id/card_annual_pass"
+            chillwallpaperproject:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

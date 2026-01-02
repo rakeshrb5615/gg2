@@ -1,0 +1,306 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<manifest android:versionCode="200007"
+          android:versionName="@string/appVersion"
+          android:compileSdkVersion="36"
+          android:compileSdkVersionCodename="16"
+          android:requiredSplitTypes="base__abi,base__density"
+          android:splitTypes=""
+          package="com.chilllive.chillwallpaperproject"
+          platformBuildVersionCode="36"
+          platformBuildVersionName="16" xmlns:android="http://schemas.android.com/apk/res/android">
+  <uses-sdk android:minSdkVersion="26"
+            android:targetSdkVersion="36" />
+  <uses-feature android:name="android.software.live_wallpaper"
+                android:required="true" />
+  <uses-feature android:name="android.hardware.location.gps"
+                android:required="false" />
+  <uses-feature android:name="android.hardware.sensor.gyroscope"
+                android:required="false" />
+  <uses-feature android:glEsVersion="0x00020000"
+                android:required="true" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.SET_WALLPAPER" />
+  <uses-permission android:name="com.android.vending.BILLING" />
+  <supports-screens android:anyDensity="true" />
+  <queries>
+    <intent>
+      <action android:name="android.intent.action.SENDTO" />
+      <data android:scheme="mailto" />
+    </intent>
+    <intent>
+      <action android:name="com.android.vending.billing.InAppBillingService.BIND" />
+    </intent>
+    <intent>
+      <action android:name="com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND" />
+    </intent>
+  </queries>
+  <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+  <uses-permission android:name="android.permission.WAKE_LOCK" />
+  <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+  <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+  <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+  <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+  <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+  <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+  <permission android:name="com.chilllive.chillwallpaperproject.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              android:protectionLevel="signature" />
+  <uses-permission android:name="com.chilllive.chillwallpaperproject.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+  <application android:theme="@style/Theme.ChillLiveWallpaper"
+               android:label="@string/app_name"
+               android:icon="@drawable/app_icon"
+               android:allowBackup="true"
+               android:hardwareAccelerated="true"
+               android:supportsRtl="true"
+               android:extractNativeLibs="true"
+               android:usesCleartextTraffic="true"
+               android:roundIcon="@drawable/app_icon"
+               android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+               android:requestLegacyExternalStorage="true"
+               android:localeConfig="@xml/locales_config"
+               android:enableOnBackInvokedCallback="true">
+    <service android:name="androidx.appcompat.app.AppLocalesMetadataHolderService"
+             android:enabled="false"
+             android:exported="false">
+      <meta-data android:name="autoStoreLocales"
+                 android:value="true" />
+    </service>
+    <service android:label="@string/app_name"
+             android:name="com.chilllive.chillwallpaperproject.MyWallpaperService"
+             android:permission="android.permission.BIND_WALLPAPER"
+             android:enabled="true"
+             android:exported="true"
+             android:stopWithTask="true">
+      <intent-filter>
+        <action android:name="android.service.wallpaper.WallpaperService" />
+      </intent-filter>
+      <meta-data android:name="MyWallpaperService"
+                 android:resource="@xml/my_wallpaper" />
+      <meta-data android:name="android.service.wallpaper"
+                 android:resource="@xml/my_wallpaper" />
+      <meta-data android:name="com.google.android.gms.version"
+                 android:value="@integer/google_play_services_version" />
+    </service>
+    <service android:name="com.chilllive.chillwallpaperproject.firebase.MyFirebaseMessagingService"
+             android:exported="false">
+      <intent-filter>
+        <action android:name="com.google.firebase.MESSAGING_EVENT" />
+      </intent-filter>
+    </service>
+    <activity android:name="com.chilllive.chillwallpaperproject.MainActivity"
+              android:exported="true"
+              android:configChanges="uiMode"
+              android:resizeableActivity="true"
+              android:enableOnBackInvokedCallback="true">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+      <intent-filter android:autoVerify="true">
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+        <data android:scheme="https"
+              android:host="siara.cc"
+              android:pathPrefix="/CrossCalc" />
+      </intent-filter>
+    </activity>
+    <service android:name="com.google.firebase.components.ComponentDiscoveryService"
+             android:exported="false"
+             android:directBootAware="true">
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar"
+                 android:value="com.google.firebase.components.ComponentRegistrar" />
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+                 android:value="com.google.firebase.components.ComponentRegistrar" />
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+                 android:value="com.google.firebase.components.ComponentRegistrar" />
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                 android:value="com.google.firebase.components.ComponentRegistrar" />
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+                 android:value="com.google.firebase.components.ComponentRegistrar" />
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+                 android:value="com.google.firebase.components.ComponentRegistrar" />
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+                 android:value="com.google.firebase.components.ComponentRegistrar" />
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar"
+                 android:value="com.google.firebase.components.ComponentRegistrar" />
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar"
+                 android:value="com.google.firebase.components.ComponentRegistrar" />
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                 android:value="com.google.firebase.components.ComponentRegistrar" />
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar"
+                 android:value="com.google.firebase.components.ComponentRegistrar" />
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+                 android:value="com.google.firebase.components.ComponentRegistrar" />
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                 android:value="com.google.firebase.components.ComponentRegistrar" />
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+                 android:value="com.google.firebase.components.ComponentRegistrar" />
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+                 android:value="com.google.firebase.components.ComponentRegistrar" />
+      <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                 android:value="com.google.firebase.components.ComponentRegistrar" />
+    </service>
+    <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+              android:permission="com.google.android.c2dm.permission.SEND"
+              android:exported="true">
+      <intent-filter>
+        <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+      </intent-filter>
+      <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+                 android:value="true" />
+    </receiver>
+    <service android:name="com.google.firebase.messaging.FirebaseMessagingService"
+             android:exported="false"
+             android:directBootAware="true">
+      <intent-filter android:priority="-500">
+        <action android:name="com.google.firebase.MESSAGING_EVENT" />
+      </intent-filter>
+    </service>
+    <activity android:theme="@android:style/Theme.Translucent.NoTitleBar"
+              android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+              android:exported="true"
+              android:excludeFromRecents="true"
+              android:launchMode="singleTask">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+        <data android:scheme="genericidp"
+              android:host="firebase.auth"
+              android:path="/" />
+      </intent-filter>
+    </activity>
+    <activity android:theme="@android:style/Theme.Translucent.NoTitleBar"
+              android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+              android:exported="true"
+              android:excludeFromRecents="true"
+              android:launchMode="singleTask">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+        <data android:scheme="recaptcha"
+              android:host="firebase.auth"
+              android:path="/" />
+      </intent-filter>
+    </activity>
+    <meta-data android:name="com.google.android.play.billingclient.version"
+               android:value="8.0.0" />
+    <activity android:theme="@android:style/Theme.Translucent.NoTitleBar"
+              android:name="com.android.billingclient.api.ProxyBillingActivity"
+              android:exported="false"
+              android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" />
+    <activity android:theme="@android:style/Theme.Translucent.NoTitleBar"
+              android:name="com.android.billingclient.api.ProxyBillingActivityV2"
+              android:exported="false"
+              android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" />
+    <provider android:name="com.google.firebase.provider.FirebaseInitProvider"
+              android:exported="false"
+              android:authorities="com.chilllive.chillwallpaperproject.firebaseinitprovider"
+              android:initOrder="100"
+              android:directBootAware="true" />
+    <service android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+             android:enabled="true"
+             android:exported="false">
+      <meta-data android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+                 android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+    </service>
+    <activity android:theme="@style/Theme.Hidden"
+              android:name="androidx.credentials.playservices.HiddenActivity"
+              android:enabled="true"
+              android:exported="false"
+              android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+              android:fitsSystemWindows="true" />
+    <activity android:theme="@android:style/Theme.Translucent.NoTitleBar"
+              android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+              android:exported="false"
+              android:excludeFromRecents="true" />
+    <service android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+             android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+             android:exported="true"
+             android:visibleToInstantApps="true" />
+    <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+              android:enabled="true"
+              android:exported="false" />
+    <service android:name="com.google.android.gms.measurement.AppMeasurementService"
+             android:enabled="true"
+             android:exported="false" />
+    <service android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+             android:permission="android.permission.BIND_JOB_SERVICE"
+             android:enabled="true"
+             android:exported="false" />
+    <activity android:theme="@android:style/Theme.Translucent.NoTitleBar"
+              android:name="com.google.android.gms.common.api.GoogleApiActivity"
+              android:exported="false" />
+    <provider android:name="androidx.startup.InitializationProvider"
+              android:exported="false"
+              android:authorities="com.chilllive.chillwallpaperproject.androidx-startup">
+      <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                 android:value="androidx.startup" />
+      <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                 android:value="androidx.startup" />
+      <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                 android:value="androidx.startup" />
+      <meta-data android:name="okhttp3.internal.platform.PlatformInitializer"
+                 android:value="androidx.startup" />
+    </provider>
+    <uses-library android:name="android.ext.adservices"
+                  android:required="false" />
+    <uses-library android:name="androidx.window.extensions"
+                  android:required="false" />
+    <uses-library android:name="androidx.window.sidecar"
+                  android:required="false" />
+    <meta-data android:name="com.google.android.gms.version"
+               android:value="@integer/google_play_services_version" />
+    <service android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+             android:exported="false">
+      <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                 android:value="cct" />
+    </service>
+    <service android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+             android:permission="android.permission.BIND_JOB_SERVICE"
+             android:exported="false" />
+    <receiver android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+              android:exported="false" />
+    <receiver android:name="androidx.profileinstaller.ProfileInstallReceiver"
+              android:permission="android.permission.DUMP"
+              android:enabled="true"
+              android:exported="true"
+              android:directBootAware="false">
+      <intent-filter>
+        <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+      </intent-filter>
+    </receiver>
+    <activity android:theme="@style/Theme.PlayCore.Transparent"
+              android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+              android:exported="false"
+              android:stateNotNeeded="true" />
+    <activity android:name="com.pairip.licensecheck.LicenseActivity"
+              android:exported="false" />
+    <provider android:name="com.pairip.licensecheck.LicenseContentProvider"
+              android:exported="false"
+              android:authorities="com.chilllive.chillwallpaperproject.com.pairip.licensecheck.LicenseContentProvider" />
+    <meta-data android:name="com.android.vending.splits.required"
+               android:value="true" />
+    <meta-data android:name="com.android.stamp.source"
+               android:value="https://play.google.com/store" />
+    <meta-data android:name="com.android.stamp.type"
+               android:value="STAMP_TYPE_DISTRIBUTION_APK" />
+    <meta-data android:name="com.android.vending.splits"
+               android:resource="@xml/splits0" />
+    <meta-data android:name="com.android.vending.derived.apk.id"
+               android:value="3" />
+  </application>
+  <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+</manifest>

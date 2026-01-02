@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+  <LinearLayout style="@style/Widget.Chill.LinearLayout.ListItem.SingleLine.stretch">
+    <ImageView android:id="@id/live_location_icon"
+               android:src="@drawable/live_location_on_icon"
+               style="@style/Widget.Chill.ImageView.ListItem.Icon" />
+    <LinearLayout style="@style/Widget.Chill.LinearLayout.ListItem.TextBox.Stretch">
+      <TextView android:text="@string/live_location_title"
+                style="@style/Widget.Chill.TextView.ListItem.Title" />
+    </LinearLayout>
+    <ImageButton android:layout_gravity="center"
+                 android:id="@id/live_location_tooltip"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/tooltip_icon"
+                 android:onClick="onclickInfoSettings"
+                 android:backgroundTint="@color/transparent" />
+    <com.google.android.material.materialswitch.MaterialSwitch android:id="@id/live_location_button"
+                          android:checked="false"
+                          style="@style/Widget.Chill.Switch" />
+  </LinearLayout>
+  <include layout="@layout/weather_refresh_rate_buttons" />
+</LinearLayout>

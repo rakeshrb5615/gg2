@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:chillwallpaperproject="http://schemas.android.com/apk/res-auto">
+  <LinearLayout android:id="@id/dynamic_weather_layout"
+                style="@style/Widget.Chill.LinearLayout.ListItem.TwoLine.Clickable">
+    <ImageView android:id="@id/refresh_rate_title_icon"
+               android:src="@drawable/refresh_icon"
+               style="@style/Widget.Chill.ImageView.ListItem.Icon" />
+    <LinearLayout style="@style/Widget.Chill.LinearLayout.ListItem.TextBox.Stretch">
+      <TextView android:text="@string/l_wr_title"
+                style="@style/Widget.Chill.TextView.ListItem.Title" />
+      <TextView android:text="@string/refresh_rate_title"
+                style="@style/Widget.Chill.TextView.ListItem.Description" />
+    </LinearLayout>
+    <com.google.android.material.materialswitch.MaterialSwitch android:id="@id/dynamic_weather_switch"
+                          android:checked="false"
+                          style="@style/Widget.Chill.Switch" />
+  </LinearLayout>
+  <HorizontalScrollView android:scrollbars="none"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:overScrollMode="ifContentScrolls"
+                        android:layout_marginStart="40.0dp">
+    <com.google.android.material.button.MaterialButtonToggleGroup android:id="@id/refresh_rate_outlined_button_group"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:paddingStart="0.0dp"
+                          android:paddingEnd="16.0dp"
+                          chillwallpaperproject:selectionRequired="true"
+                          chillwallpaperproject:singleSelection="true">
+      <com.google.android.material.button.MaterialButton android:id="@id/refresh_rate_5m"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/five_minute"
+                            style="@style/Widget.Chill.Button.OutlinedButton" />
+      <com.google.android.material.button.MaterialButton android:id="@id/refresh_rate_30m"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/thirty_minutes"
+                            style="@style/Widget.Chill.Button.OutlinedButton" />
+      <com.google.android.material.button.MaterialButton android:id="@id/refresh_rate_1h"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/one_hour"
+                            style="@style/Widget.Chill.Button.OutlinedButton" />
+      <com.google.android.material.button.MaterialButton android:id="@id/refresh_rate_2h"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/two_hours"
+                            style="@style/Widget.Chill.Button.OutlinedButton" />
+      <com.google.android.material.button.MaterialButton android:id="@id/refresh_rate_3h"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/three_hours"
+                            style="@style/Widget.Chill.Button.OutlinedButton" />
+      <com.google.android.material.button.MaterialButton android:id="@id/refresh_rate_4h"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/four_hours"
+                            style="@style/Widget.Chill.Button.OutlinedButton" />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+  </HorizontalScrollView>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<vector android:height="50.0dp"
+        android:width="50.0dp"
+        android:viewportWidth="30.0"
+        android:viewportHeight="30.0" xmlns:android="http://schemas.android.com/apk/res/android">
+  <path android:fillColor="@color/live_location_icon"
+        android:pathData="M15,12.45c1.41,0 2.55,1.14 2.55,2.55s-1.14,2.55 -2.55,2.55 -2.55,-1.14 -2.55,-2.55 1.14,-2.55 2.55,-2.55" />
+  <path android:fillColor="@color/live_location_icon"
+        android:pathData="M20.7,14.36c-0.29,-2.65 -2.41,-4.77 -5.06,-5.06v-1.3h-1.27v1.3c-2.65,0.29 -4.77,2.41 -5.06,5.06h-1.3v1.27h1.3c0.29,2.65 2.41,4.77 5.06,5.06v1.3h1.27v-1.3c2.65,-0.29 4.77,-2.41 5.06,-5.06h1.3v-1.27h-1.3ZM15,19.45c-2.46,0 -4.45,-1.99 -4.45,-4.45s1.99,-4.45 4.45,-4.45 4.45,1.99 4.45,4.45 -1.99,4.45 -4.45,4.45Z" />
+</vector>

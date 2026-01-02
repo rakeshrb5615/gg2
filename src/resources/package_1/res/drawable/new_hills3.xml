@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<vector android:height="22.5dp"
+        android:width="200.0dp"
+        android:viewportWidth="200.0"
+        android:viewportHeight="22.5" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+  <path android:fillColor="#f7f7f7"
+        android:pathData="M0,0V22.5H100S47.83,0 0,0Z" />
+  <path android:fillColor="@drawable/$new_hills3__0"
+        android:pathData="M4.72,22.5H200V0C129.92,1.23 4.72,22.5 4.72,22.5Z" />
+</vector>

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<vector android:height="19.91dp"
+        android:width="18.0dp"
+        android:viewportWidth="18.0"
+        android:viewportHeight="19.91" xmlns:android="http://schemas.android.com/apk/res/android">
+  <path android:fillColor="@color/ui_enabled_day"
+        android:pathData="M15,14.08a2.91,2.91 0,0 0,-2 0.77L5.91,10.7A3.27,3.27 0,0 0,6 10a3.27,3.27 0,0 0,-0.09 -0.7L13,5.19A3,3 0,1 0,12 3a3.27,3.27 0,0 0,0.09 0.7L5,7.81a3,3 0,1 0,0 4.38l7.12,4.15a2.84,2.84 0,0 0,-0.08 0.66A2.92,2.92 0,1 0,15 14.08M15,2a1,1 0,1 1,-1 1,1 1,0 0,1 1,-1M3,11a1,1 0,1 1,1 -1,1 1,0 0,1 -1,1m12,7a1,1 0,1 1,1 -1A1,1 0,0 1,15 18Z" />
+</vector>

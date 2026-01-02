@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="vertical"
+              android:id="@id/weather_layout"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:chillwallpaperproject="http://schemas.android.com/apk/res-auto">
+  <include layout="@layout/weather_layout_top" />
+  <include layout="@layout/weather_refresh_rate_buttons" />
+  <LinearLayout android:layout_marginTop="@dimen/short_margin"
+                style="@style/Widget.Chill.LinearLayout.ListItem.TwoLine.Clickable">
+    <ImageView android:src="@drawable/partly_cloudy_off_day"
+               style="@style/Widget.Chill.ImageView.ListItem.Icon" />
+    <LinearLayout style="@style/Widget.Chill.LinearLayout.ListItem.TextBox.Stretch">
+      <TextView android:text="@string/cloud_drift_title"
+                style="@style/Widget.Chill.TextView.ListItem.Title" />
+      <TextView android:text="@string/cloud_drift_description"
+                style="@style/Widget.Chill.TextView.ListItem.Description" />
+    </LinearLayout>
+    <com.google.android.material.materialswitch.MaterialSwitch android:id="@id/cloud_drift_switch"
+                          android:checked="false"
+                          style="@style/Widget.Chill.Switch" />
+  </LinearLayout>
+  <LinearLayout android:orientation="vertical"
+                android:id="@id/weather_layout_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+    <LinearLayout style="@style/Widget.Chill.LinearLayout.ListItem.SingleLine">
+      <ImageView android:src="@drawable/cloud_cover_icon"
+                 style="@style/Widget.Chill.ImageView.ListItem.Icon" />
+      <LinearLayout style="@style/Widget.Doodle.LinearLayout.ListItem.TextBox">
+        <TextView android:text="@string/cloudCoverTitle"
+                  style="@style/Widget.Chill.TextView.ListItem.Title" />
+      </LinearLayout>
+    </LinearLayout>
+    <com.google.android.material.slider.Slider android:value="50"
+                          android:id="@id/cloud_cover_slider"
+                          android:stepSize="0.0"
+                          android:valueFrom="1"
+                          android:valueTo="100"
+                          android:layout_marginStart="35.0dp"
+                          android:layout_marginEnd="14.0dp"
+                          chillwallpaperproject:labelBehavior="gone"
+                          style="@style/Widget.Chill.Slider" />
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent">
+      <LinearLayout android:background="@drawable/transparent_ripple_button_bottom_sheet"
+                    style="@style/Widget.Chill.LinearLayout.ListItem.SingleLine">
+        <ImageView android:src="@drawable/rain_snow_icon"
+                   style="@style/Widget.Chill.ImageView.ListItem.Icon" />
+        <LinearLayout style="@style/Widget.Chill.LinearLayout.ListItem.TextBox.Stretch">
+          <TextView android:text="@string/precipitationsAmountTitle"
+                    style="@style/Widget.Chill.TextView.ListItem.Title" />
+        </LinearLayout>
+      </LinearLayout>
+      <com.google.android.material.slider.Slider android:value="15"
+                            android:id="@id/precipitations_slider"
+                            android:stepSize="0.0"
+                            android:valueFrom="0"
+                            android:valueTo="30"
+                            android:layout_marginStart="35.0dp"
+                            android:layout_marginEnd="14.0dp"
+                            chillwallpaperproject:labelBehavior="gone"
+                            style="@style/Widget.Chill.Slider" />
+      <LinearLayout android:background="@drawable/transparent_ripple_button_bottom_sheet"
+                    style="@style/Widget.Chill.LinearLayout.ListItem.SingleLine">
+        <ImageView android:src="@drawable/wind_icon"
+                   style="@style/Widget.Chill.ImageView.ListItem.Icon" />
+        <LinearLayout style="@style/Widget.Chill.LinearLayout.ListItem.TextBox.Stretch">
+          <TextView android:text="@string/windStrengthSeekTitle"
+                    style="@style/Widget.Chill.TextView.ListItem.Title" />
+        </LinearLayout>
+      </LinearLayout>
+      <com.google.android.material.slider.Slider android:value="10"
+                            android:id="@id/wind_slider"
+                            android:stepSize="0.0"
+                            android:valueFrom="-66"
+                            android:valueTo="66"
+                            android:layout_marginStart="35.0dp"
+                            android:layout_marginEnd="14.0dp"
+                            chillwallpaperproject:labelBehavior="gone"
+                            style="@style/Widget.Chill.Slider" />
+    </LinearLayout>
+  </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<vector android:height="80.47dp"
+        android:width="12.32dp"
+        android:viewportWidth="12.32"
+        android:viewportHeight="80.47" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+  <path android:fillColor="#fff"
+        android:pathData="M1.99,80.47l0,-30.21l1.87,-3.08l0,-0.17l0.14,-0.33l0,-0.66l-0.14,-0.43l0,-40.25l4.47,-5.34l2.28,0l0,3.18l-0.26,0.46l-0.01,1.18l0.27,0.48l0,1.99l-0.24,0.62l-0.02,1.56l0.26,0.71l0,3.05l-0.3,0.58l-0.01,1.47l0.31,0.85l0,32.84l1.71,3.05l0,28.45l-10.33,0z" />
+  <path android:fillColor="@drawable/$building12__0"
+        android:pathData="M0,80.47l0,-30.21l1.87,-3.08l0,-0.17l0.14,-0.33l0,-0.66l-0.14,-0.43l0,-40.25l4.47,-5.34l2.28,0l0,3.18l-0.25,0.46l-0.01,1.18l0.26,0.48l0,1.99l-0.23,0.62l-0.03,1.56l0.26,0.71l0,3.05l-0.3,0.58l0,1.47l0.3,0.85l0,32.84l1.71,3.05l0,28.45l-10.33,0z" />
+</vector>

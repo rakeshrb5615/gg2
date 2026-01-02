@@ -1,0 +1,6 @@
+package u7;
+
+/* loaded from: /storage/emulated/0/Documents/jadec/sources/com.chilllive.chillwallpaperproject/dex-files/0.dex */
+public interface p extends h7.a {
+    Object invoke(Object obj, Object obj2);
+}

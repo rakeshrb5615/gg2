@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<ImageButton android:id="@id/thumbnail_button"
+             android:background="@drawable/round_corners_button"
+             android:layout_width="150.0dp"
+             android:layout_height="150.0dp"
+             android:layout_margin="8.0dp"
+             android:contentDescription="scene_thumbnail_desc" xmlns:android="http://schemas.android.com/apk/res/android" />

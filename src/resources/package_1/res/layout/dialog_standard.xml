@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:layout_gravity="center_horizontal"
+              android:orientation="vertical"
+              android:id="@id/dialog_root"
+              android:padding="@dimen/dialog_padding"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:maxWidth="560.0dp"
+              android:minWidth="280.0dp"
+              android:elevation="2.0dp" xmlns:android="http://schemas.android.com/apk/res/android">
+  <ImageView android:layout_gravity="center"
+             android:id="@id/dialog_languages_icon"
+             android:visibility="gone"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="@dimen/dialog_title_margin"
+             android:src="@drawable/language_icon" />
+  <com.google.android.material.textview.MaterialTextView android:id="@id/dialog_title"
+                        android:text="@string/title"
+                        style="@style/Widget.Chill.Dialog.Title.Centered" />
+  <ScrollView android:orientation="vertical"
+              android:id="@id/dialog_scrollView"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content">
+    <TextView android:id="@id/dialog_message_core"
+              android:text="@string/text"
+              style="@style/Widget.Chill.Dialog.Description" />
+  </ScrollView>
+  <com.google.android.material.checkbox.MaterialCheckBox android:id="@id/dialog_checkbox"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+  <LinearLayout android:gravity="end"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+    <com.google.android.material.button.MaterialButton android:id="@id/dialog_cancel_button"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="@string/cancel_button"
+                          android:layout_marginEnd="@dimen/button_padding"
+                          style="@style/Widget.Material3.Button.TextButton" />
+    <com.google.android.material.button.MaterialButton android:id="@id/dialog_ok_button"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="@string/communication_dialog_ok_button"
+                          android:layout_marginEnd="@dimen/button_padding"
+                          style="@style/Widget.Material3.Button.TextButton" />
+  </LinearLayout>
+</LinearLayout>

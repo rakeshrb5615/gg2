@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<vector android:height="59.26dp"
+        android:width="52.64dp"
+        android:viewportWidth="52.64"
+        android:viewportHeight="59.26" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+  <path android:fillColor="@drawable/$tree1__0"
+        android:pathData="M47.73,16.27c-0.44,-9.9 -10.3,-10 -10.44,-10.41C34.91,-1.3 19.12,-3 12.44,7.07a7.5,7.5 0,0 0,-0.8 1.57s0,-0.08 0,-0.13C3.23,9.66 1.19,20.14 4.94,24.12 -1.91,27.41 -1,35.27 3.76,37.89c0,0 -2.13,5 4.46,7a7.09,7.09 0,0 0,3.52 0.16c3.06,1.41 9.63,2 10.64,-3.83a30.78,30.78 0,0 0,2 2.39l-0.05,0c2.76,2.2 5.76,-2.06 7.37,1.61 3.7,1.6 8.21,0.57 10,-3.43 3.68,-0.06 9.79,-5.34 9.79,-8.79 0.8,-0.63 0.9,-3.6 1.15,-6.7C52.71,18.9 47.73,16.27 47.73,16.27Z" />
+  <path android:fillColor="@drawable/$tree1__1"
+        android:pathData="M26.86,45.35c-3.12,1.51 -2.18,-2.65 -4.48,-4.12a12.64,12.64 0,0 1,-1.69 3.09c4.42,12.13 -6.25,16.31 6.4,14.56C25,44.8 23.39,52.6 32,45c-1.56,-3 -3.13,-1.07 -5.1,0.36" />
+</vector>

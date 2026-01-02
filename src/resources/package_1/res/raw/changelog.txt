@@ -1,0 +1,501 @@
+##0.102.7
+#New
+• Added a new High Dynamic Range (HDR) effect to the color palette for a more vibrant and natural look.
+• New HDR slider in the Scene settings to modify this effect.
+• New swipe sensitivity slider in the Modes settings to modify the scrolling and parallax speed.
+• More customization: You can now toggle the seasonal events and Easter Eggs on or off in the Effect settings.
+
+• Set a different language directly from the main page.
+Supported languages: English, French, Japanese and traditional Chinese.
+Only a few language packs are currently available, but more are on the way. You can help translate the app!
+Contact me if you wish to help.
+
+• Added a back button in the store for navigation ease.
+
+• 0.102.6: Clarified some items in the Store.
+Added translations when purchasing items.
+
+#Limited-time promotion ended
+• We offered a 3-month promotion where all scenes (except Chill Hills) were free.
+• This promotion has now ended, and access has returned to the standard paid membership.
+• Jagged was previously a paid scene and will now remain free permanently.
+• Affected scenes: Monoliths, Dunes, and Celestial Haven.
+
+# Changed
+• Refined the rain & snow animations for a smoother experience.
+• Refined the color palette for mountain scenes, creating more beautiful and immersive sunrises and sunsets.
+• Refined the night color in most of the scenes.
+• The Sun size is now consistent across devices.
+• Reduced the Sun size during sunrise and sunset.
+• Increased the Sun glowing strength.
+• Distant clouds now have a softer fade effect.
+• Updated the cloud color in snowy and overcast conditions.
+• New store layout for a better clarity.
+• Selecting a locked feature now displays a dialog window for better clarity.
+• Updated the roadmap.
+
+#Fixed
+• The toggle Moon effect is now working again.
+• The toggle parallax setting is now working again.
+• Fixed manual weather selection not working in the French version.
+• Fixed a rendering issue that caused a square-shaped artifact to appear around the Moon.
+• Fixed the stars disappearing after some time.
+• Stars aren't blinking anymore when reloading the scene.
+• Fixed the weather changing when activating the Live Position.
+• Fixed the Sun position during sunrise/sunset in order to avoid Sun showing at night.
+• Fixed an issue causing crash or freeze when wallpaper visibility changed or reloaded.
+• The North Star is now affected by the cloud cover.
+• Several bug resolution.
+• Stability improvement.
+
+##0.101
+#New
+• Added a new official variation for the Fuji scene: 🗻 Fuji Lake!
+  • Enable it in settings by tapping the Fuji thumbnail, then "Lake."
+  • This is a first version. The water is affected by wind, rain & seasons. More to come!
+  • This variation is accessible to paid users (Premium and Chill Pass).
+  • Feedbacks are welcome!
+
+• Airwaves: Stronger winds now trigger gentle airwaves that drift across the scene, enhancing the sense of motion.
+  • This can be disabled in the Effects settings.
+
+• New Moon design! The moon now glows in the sky, with improved crescents and a more refined overall look.
+
+#Improved
+• Enhanced sunset colors in the Fuji scene.
+• Added a description to the Real Time mode button to improve clarity.
+• Refined the settings layout.
+• Slight scene generation speed increase.
+
+#Fixed
+• Scenes in wallpaper mode now match the in-app preview (excluding random animations like clouds).
+• Clouds now load correctly at app startup.
+• Addressed an issue where the Moon phase would not refresh correctly.
+• Selecting Fuji Lake doesn't trigger warning anymore for Premium users.
+• No more black particles at scene reload.
+• Corrected cloud shapes in landscape wallpaper mode.
+• Stability improvements.
+
+##0.100.14
+#Improved
+• Adjusted the cloud color in the Celestial Haven and the Monoliths for a better feel.
+
+#Fixed
+• Fixed an issue affecting the cloud color.
+• Resolved an issue cloud drifting suddenly upon reload.
+
+##0.100.11 to 0.100.13
+#New
+• Added a switch in the weather settings to toggle the cloud drift mode (more details below).
+• Replaced the "Info" and "Help" buttons with tooltips for a cleaner settings interface.
+
+#Improved
+☁️ Clouds
+• Adjusted positioning logic to better reflect depth perception.
+• Farther clouds now appear smaller and closer to the horizon, nearer clouds rise higher and scale up more naturally.
+• Drift now responds to time-of-day. You can toggle this effect in the weather settings.
+• Refine color during sunset for a better feel.
+• Clouds now appear naturally scattered across the screen in a more organic way.
+• Fixed occasional disappearing or respawning.
+• Fixed textures being cropped in landscape mode due to incorrect scaling.
+• Increased the maximum number of clouds.
+• Monoliths: The main cloud is now correctly positioned.
+
+• Refined the rain animation for better depth perception.
+
+🔧 Settings
+• Reduced redundant weather provider calls to conserve battery and data.
+• Clarified the error codes when fetching weather data.
+• Commas are now supported in the live location city dialog.
+• Slight memory usage improvement.
+
+#Fixed
+• Fixed an issue where live location would disable itself if device GPS was off.
+• Fixed an issue where the location source would not correctly switch between GPS and manual input.
+• Fixed incorrect weather being set after toggling live weather.
+• Attempted to fix a particle glitch affecting some Google Pixel devices • TBC.
+• Stability improvements.
+
+##0.100.10
+#New
+• Seasons now fade smoothly into one another.
+• Added sliders to adjust the random weather and random season refresh frequency.
+• Added Share, Rate, and Play Store buttons to the main menu for quick access.
+• Tooltips now fade in and out smoothly.
+
+#Changes
+• Scenes are now centered by default. The "Center Haven" option has been replaced with "Center Scene".
+
+#Fixed
+• Adjusted the rain slider range.
+• Stability improvements.
+
+##0.100.8 & 0.100.9
+#New
+• Added a slider to adjust the refresh frequency for random scenes.
+
+#Changes
+• Greater weather settings freedom in the Weather tab.
+• Power Saving options are now grouped for better clarity, with a tooltip for explanations.
+• Moved the scene selector to the top of the Basic Settings layout.
+• Minor layout refinements in the bottom sheet and "Learn More" sections.
+• Minor settings changes for a more pleasant feel.
+
+#Fixed
+• Slider colors now update correctly when changing the scene or season.
+• Sunrise and sunset times now refresh correctly, both manually and automatically.
+
+##0.100.7
+#Improved
+• Refined sun visuals: reduced size during sunrise/sunset and adjusted glow and color.
+• Adjusted small cloud size for better scaling.
+
+#Fixed
+• Fixed an issue with the upgrade pass not unlocking features properly.
+• Resolved an issue with the scroll sometimes re-enabling itself when turned off.
+• Resolved an issue with the weather not correctly refreshing in wallpaper mode.
+
+##0.100.3 to 0.100.6
+#New
+• Added the option to disable shooting stars and contrails from the Effects menu.
+
+#Improved
+• Slight memory usage improvement.
+
+#Fixed
+• Removed the flooded scenes.
+• Improved clarity in the information tab.
+• Fixed missing rain in live weather mode.
+• Fixed random weather mode.
+• Fixed some information not refreshing correctly in the Settings.
+• Fixed dynamic weather not updating when returning to the app.
+• Fixed a defective product in the Store.
+• Fixed an issue with the rain not activating in wallpaper mode.
+• Stability improvements.
+
+## 0.100 to 0.100.2
+#New
+• New Store page with updated in-app products.
+- All early Premium users remain Premium with the same benefits as before, NO change!
+- For the new users: Premium is now replaced by the *Chill Pass* (yearly subscription, same benefits).
+- *Lifetime Chill Pass* added for users who prefer a one-time purchase.
+- Introduced *Real-Time Weather Pro* subscription: refreshes weather every 5 minutes for live accuracy.
+• You can now purchase bundles to avoid subscriptions.
+• Added an information about the latest weather forecast update in the menu (tap i).
+• Clarification regarding the new products.
+• Added a roadmap section.
+• Refined settings layout for easier navigation.
+• Some surprise for the ones who stick around! :D
+
+#Why do we need a subscription?
+Until now, the app was small and the old model worked fine, low call volume, simple features, no issues.
+But as the app has grown and more people are using it, keeping real-time updates and improving the experience isn’t sustainable without support.
+The subscription helps cover the weather provider and ongoing improvements.
+Thank you for your understanding!
+
+#Fixed
+• Weather updates now trigger correctly in all cases.
+• Improved performance of the time selection slider (no more slow scroll).
+• Dynamic weather can now be enabled even if location services are off.
+• Fixed an issue with the Sun & Moon positions in landscape mode.
+• Fixed a stability issue introduced in version 0.99.
+• Fixed an issue with the sunrise and sunset times not loading properly.
+• General performance and reliability improvements.
+
+## 0.99.1
+#Fixed
+• Fixed an issue with the manual time slider not refreshing properly.
+
+## 0.99
+#New
+• Dynamic cloud system: Clouds are now randomly generated and drift across the scene for more natural immersion.
+• Store access: Added a store button in the settings.
+• Simpler navigation: Settings now open on the Simple Settings tab by default.
+• Performance: Smoother settings navigation with improved responsiveness.
+• Icon fading: Applied consistently across the app.
+• Version indicator: Added a color dot to indicate if the app is up to date or not.
+
+#Fixed
+• Corrected slider tap auto scroll.
+• Fixed the laggy auto sunrise/sunset rotation animation.
+• Fixed hidden button state not restoring properly when returning from the home screen.
+• Various crash fixes and stability improvements.
+
+## 0.98
+#New
+• Seasonal trees now change appearance with special colors during certain seasons.
+You can toggle this in the Scenes menu to revert to legacy visuals: "Legacy Forest".
+• Refined settings layout: advanced options are now grouped by category and accessible from the main screen.
+• Simple settings option restores the previous, minimal layout with fewer options.
+• Fade transitions now smooth icon and text color changes when switching between bright and dark wallpapers.
+• Improved slider track color contrast for better visibility.
+
+#Fixed
+• Visual distortion affecting certain tree textures.
+• More consistent tree rendering across all scenes.
+• Incorrect sunrise color in Monoliths scene.
+• Live location dialog now scales properly on all devices.
+• Fixed scene scaling issue when exiting from forced portrait mode.
+• Action bar icons and text now display correct colors across devices.
+• Minor performance improvements.
+• General crash fixes and stability enhancements.
+
+## 0.97.6
+#New
+• New optional blur effect has been implemented (in the advanced settings). This feature is still experimental, feedback on performance and visual quality is welcome!
+
+# Fixed
+• Resolved a scene rendering issue brought by the previous version.
+• Improved overall stability.
+
+## 0.97.5
+#New
+• Particles first version:
+  now animate across the scene, adding dynamic motion tied to wind speed and precipitations.
+  You can toggle this effect in the Effects settings.
+• Added a toolbar in Settings for streamlined navigation.
+• Relocated the Settings information and effects icons sections into the new toolbar for a cleaner layout.
+• Introduced a notification service to deliver important updates or crash reports. Strictly no spam!
+
+#Improvements
+• Improved accuracy of rain and snow detection.
+• Improved particle thickness for rain and lightning bolts across all devices.
+• Improved switches animation.
+
+# Fixed
+• Minor fixes in weather data handling and UI elements.
+• Improved overall stability.
+
+## 0.97.4
+#New
+• Added smooth tap animation on sliders for improved user experience.
+• Enhanced sliders colors.
+• Refined the set location dialog.
+
+# Fixed
+• Dynamic weather stopped refreshing after the last update.
+
+## 0.97.3
+• Improved location saving to prevent crashes on older installs.
+• Improved the set location dialog.
+• Stability improvement.
+
+## 0.97.2
+# New
+• New dialog to set location manually by city, coordinates, or GPS.
+• Added slider to adjust scene color saturation.
+• Added slider to adjust night darkness levels.
+
+# Fixed
+• Resolved a crash caused by slider values exceeding valid ranges.
+• Fixed inconsistencies in random scene generation between the preview and the live wallpaper.
+
+# Other
+• Enhanced store menu.
+• Improved live location accuracy.
+
+## 0.97.1
+• Resolved 2 stability issues in Settings.
+• Improved overall app stability.
+
+## 0.97
+# New
+Menus
+• Redesigned all menus with a modern, more pleasant interface following Google’s developer guidelines (Google Material 3).
+    • New sliders, switches, icons, color themes, and improved navigation.
+• Updated the contact menu for a better user experience.
+• Replaced old menu animations with smooth fade-in/out transitions.
+• Added automatic update check on app launch.
+• Introduced changelog, help, and “learn more” sections.
+• Added a “share” button.
+• Added a help section within settings.
+• Clarified power saving mode descriptions.
+• Restored the slider to adjust the number of trees.
+• Added an option to keep the Celestial Haven centered when changing scenes.
+• Improved scene picker animations and refined day/night thumbnails.
+
+# Fixed
+ The Moon is back: fixed rendering issue on certain devices.
+• Incorrect weather information shown in settings.
+• Incorrect season displayed when rotating the screen.
+• Scene dimension errors in landscape mode (under review).
+• Occasional red textures appearing at night (under review).
+• Celestial Haven cloud speed on lower resolutions.
+• General stability improvements.
+
+# Other
+• Improved scene randomness.
+
+## 0.96.6 - 7 - 8
+• Refined colors in Chill Hills for better vibrancy and contrast.
+• Updated sun color during daytime to a warmer yellow tone.
+• Fixed a glitch causing cloud artifacts when reloading scenes.
+• Removed the elastic “bounce” effect on the sun when scenes reload.
+• Fixed scrolling issues in the settings menu.
+• Improved overall app stability.
+
+## 0.96.5
+• Improved menus: the info screen now shows live location and weather details.
+• Fixed crashes affecting some devices.
+
+## 0.96.4
+• Introduced new app icons for a fresher look.
+• Fixed crashes for increased stability.
+• Improved animation smoothness.
+
+## 0.96.3
+• Corrected disabled seek bar thumb color.
+• Fixed a crash related to dynamic color changes in seek bars.
+• Started integrating a new icon pack (work in progress).
+
+## 0.96.2
+• Seek bars now match the wallpaper's primary color.
+• Enhanced thunder visuals with improved alpha blending.
+• Minor UI tweak in the Store.
+
+## 0.96.1
+• Fixed status bar text color in wallpaper mode.
+• Fixed one critical internal issue.
+
+## 0.96
+• Added The Chill Hills scene: complete and functional.
+• Major visual overhaul of thunder animation: shape, alpha, fading.
+• Basic menu layout adjustments.
+• Includes all stability improvements and UI updates from 0.95.x branch.
+
+## 0.95 to 0.95.42
+#New
+• Redesigned the store menu.
+• Added a contact menu for simplified user feedback and communication.
+• Auto sunrise/sunset transitions.
+• Dynamic weather refresh rate set to 1h; Premium: 30 minutes.
+• In-app status bar text now adapts to time of day for readability.
+• Re-enabled the color hint in wallpaper mode.
+• Preserved custom sunrise/sunset settings when live location is disabled.
+• Refined UI toggle controls; restored cloud cover after weather animation fix.
+• Cloud cover now affects shooting stars.
+• Enabled in app tilt scrolling.
+• Android 14 support.
+• Added Firebase crash logging.
+
+#Fixed
+• Critical issue causing loss of access to paid features.
+• Minor UI updates in store and menus.
+• Fixed live weather background behavior.
+• Adjusted sun path in the “Haven” scene.
+• Sun and moon path animations improved.
+• Corrected Fuji sun positioning.
+• Major shader fixes for sun/moon draw ordering.
+• Ensured transparent layers (thunder) render correctly.
+• Patched weather refresh logic and rain/wind animation bug.
+• Fixed random scene index logic.
+• UI layout tweaks in main and subtitle areas.
+• Cloud and cloud‑shape corrections for landscape.
+• Layout and thumbnail performance enhancements.
+• Numerous crash fixes and overall stability improvements.
+
+## 0.95 - The biggest update yet!
+The 0.95 is the most ambitious release so far. This update packs new features, big performance gains, and visual upgrades to elevate the experience.
+
+# OpenGL Transition & Full Rework
+Established the app’s current architecture and resolved all major performance constraints.
+This version was developed to resolve these issues through a complete transition to OpenGL.
+
+#Scene Updates
+• Refreshed color palettes for all scenes
+• Dynamic seasonal skies and enhanced sun animations
+• New minimalist Sky Scene
+• Celestial Haven now has procedurally generated windows
+• Major rework of Monoliths (City): New buildings, better contrast, cleaner visuals
+• New trees design
+• Improved support for landscape mode
+
+# Animation Enhancements
+• Redesigned rain, snow, thunder & rainbow effects
+• Trees now sway naturally with the wind
+• Infinite scrolling in all directions
+• Scene scrolling now works inside menus
+• Adjustable wind strength
+• Automatic smooth sky rotation
+
+# Revamped UI
+• Fully redesigned interface: all controls in one unified menu
+• Easily manage weather, time, landscape, brightness, and more
+• Simple, intuitive layout for a smoother experience
+• Now supports both portrait and landscape modes
+
+# New Features
+• Random Mode: Auto-generates unique scenes by mixing time, weather, season & landscape
+• Screen brightness control
+• Two Power Saving Modes
+
+# Performance Boosts
+• Major performance gains vs. v0.94: smoother animations with OpenGL
+• Reduced RAM usage
+• Lower battery drain
+• Increased overall stability
+
+# Bug Fixes
+• White pixel line on some scenes
+• Incorrect rainbow position in Celestial Haven
+• Lag in the Monoliths scene
+• Laggy snowfall
+• Blurry textures on certain devices
+• Multiple crash issues resolved
+
+## Pre‑0.95
+# Legacy Performance Issues
+Until version 0.94, the app suffered from major performance limitations. Despite significant debugging efforts, the Android canvas and animation APIs couldn't handle the volume of real-time drawing and computation required. 
+Even at reduced frame rates (e.g., 24 FPS), the rendering pipeline remained too slow, especially in the main activity. This slow performance was a major drawback that led many users to uninstall the app shortly after launching it.
+
+## Version 0.94
+# (Last non OpenGL release)
+• Experimental open testing build with minor changes. Later discarded.
+
+## 0.88 - 0.93
+• App rework.
+• Better perf and stability.
+• Bux fixes (Moon, store, other).
+
+# New
+• New animations.
+• The Sun is now here.
+• New scenes: The Celestial Haven and Dunes (to improve).
+• Extended horizontal scrolling for a better experience.
+
+## 0.85
+• Performance improvement
+
+## 0.53 - 0.81
+# Weather update! (WIP)
+• Set live weather based on your position, or select the one you like
+• Premium version with new scene and fast weather update
+• Overall stability improvement
+• Layout improvement
+
+## 0.52
+# 2023
+Major updates from v0.49!
+• Performance improvements (the previous perf improvements were mostly “cheats” in order to reduce drawing within the Canvas framework).
+• New scene: City Scape (Called Monoliths in recent versions).
+• The Moon is here! Moonrise/set and phase according to your location
+• Shooting stars at night
+• planes crossing the sky
+• color corrections
+• bug patched
+
+# Previously
+• added tilt scrolling effect
+• corrected minor bugs
+• changed weather API
+• scene colors rework
+
+## Version Pre 0.52
+# No more entries
+The 0.52 release notes mention the v0.49, but no entries remain today for earlier versions.
+Before the 0.52, the app had a very small user base, around 200 users.
+The functions were basic and the performance was poor. No live weather, no Premium version, 2 different scenes (Fuji and Peaks). Very limited scrolling and limited personalisation. The scale of the project was small and no dev logs were made.
+
+I started coding this app for fun, and never thought that more than 10 people would ever download it.
+I still have the same mindset, though a little more organized and commited.
+It is still a side activity, more a hobby than anything else. Thank you so much for using my app!

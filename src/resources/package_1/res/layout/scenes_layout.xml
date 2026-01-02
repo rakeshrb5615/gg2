@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="vertical"
+              android:id="@id/scenes_layout"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:chillwallpaperproject="http://schemas.android.com/apk/res-auto">
+  <include layout="@layout/scenes_layout_top" />
+  <LinearLayout android:orientation="vertical"
+                android:id="@id/scenes_layout_2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+    <LinearLayout style="@style/Widget.Chill.LinearLayout.ListItem.SingleLine">
+      <ImageView android:src="@drawable/saturation_icon"
+                 style="@style/Widget.Chill.ImageView.ListItem.Icon" />
+      <LinearLayout style="@style/Widget.Doodle.LinearLayout.ListItem.TextBox">
+        <TextView android:text="@string/advanced_settings_saturation_title"
+                  style="@style/Widget.Chill.TextView.ListItem.Title" />
+      </LinearLayout>
+    </LinearLayout>
+    <com.google.android.material.slider.Slider android:value="0"
+                          android:id="@id/saturation_slider"
+                          android:stepSize="0.0"
+                          android:valueFrom="0"
+                          android:valueTo="100"
+                          android:layout_marginStart="35.0dp"
+                          android:layout_marginEnd="14.0dp"
+                          style="@style/Widget.Chill.Slider" />
+    <LinearLayout style="@style/Widget.Chill.LinearLayout.ListItem.SingleLine">
+      <ImageView android:src="@drawable/hdr_icon"
+                 style="@style/Widget.Chill.ImageView.ListItem.Icon" />
+      <LinearLayout style="@style/Widget.Doodle.LinearLayout.ListItem.TextBox">
+        <TextView android:text="@string/settings_hdr_title"
+                  style="@style/Widget.Chill.TextView.ListItem.Title" />
+        <TextView android:text="@string/settings_hdr_description"
+                  style="@style/Widget.Chill.TextView.ListItem.Description" />
+      </LinearLayout>
+    </LinearLayout>
+    <com.google.android.material.slider.Slider android:value="0"
+                          android:id="@id/hdr_slider"
+                          android:stepSize="0.0"
+                          android:valueFrom="0"
+                          android:valueTo="100"
+                          android:layout_marginStart="35.0dp"
+                          android:layout_marginEnd="14.0dp"
+                          style="@style/Widget.Chill.Slider" />
+    <LinearLayout style="@style/Widget.Chill.LinearLayout.ListItem.SingleLine">
+      <ImageView android:id="@id/advanced_settings_darkness_icon"
+                 android:src="@drawable/darkness_icon"
+                 style="@style/Widget.Chill.ImageView.ListItem.Icon" />
+      <LinearLayout android:id="@id/advanced_settings_darkness_layout"
+                    style="@style/Widget.Chill.LinearLayout.ListItem.TextBox.Stretch">
+        <TextView android:text="@string/advanced_settings_night_darkness_title"
+                  style="@style/Widget.Chill.TextView.ListItem.Title" />
+      </LinearLayout>
+    </LinearLayout>
+    <com.google.android.material.slider.Slider android:value="50"
+                          android:id="@id/darkness_slider"
+                          android:stepSize="0.0"
+                          android:valueFrom="0"
+                          android:valueTo="50"
+                          android:layout_marginStart="35.0dp"
+                          android:layout_marginEnd="14.0dp"
+                          chillwallpaperproject:labelBehavior="gone"
+                          style="@style/Widget.Chill.Slider" />
+    <LinearLayout style="@style/Widget.Chill.LinearLayout.ListItem.SingleLine">
+      <ImageView android:id="@id/dimmer_icon"
+                 android:src="@drawable/dimmer_icon"
+                 style="@style/Widget.Chill.ImageView.ListItem.Icon" />
+      <LinearLayout style="@style/Widget.Chill.LinearLayout.ListItem.TextBox.Stretch">
+        <TextView android:text="@string/advanced_settings_dim_luminosity_title"
+                  style="@style/Widget.Chill.TextView.ListItem.Title" />
+      </LinearLayout>
+    </LinearLayout>
+    <com.google.android.material.slider.Slider android:value="0"
+                          android:id="@id/dimmer_slider"
+                          android:stepSize="0.0"
+                          android:valueFrom="0"
+                          android:valueTo="50"
+                          android:layout_marginStart="35.0dp"
+                          android:layout_marginEnd="14.0dp"
+                          style="@style/Widget.Chill.Slider" />
+    <LinearLayout style="@style/Widget.Chill.LinearLayout.ListItem.TwoLine.Clickable">
+      <ImageView android:src="@drawable/blur_icon"
+                 style="@style/Widget.Chill.ImageView.ListItem.Icon" />
+      <LinearLayout style="@style/Widget.Chill.LinearLayout.ListItem.TextBox.Stretch">
+        <TextView android:text="@string/advanced_settings_blur_luminosity_title"
+                  style="@style/Widget.Chill.TextView.ListItem.Title" />
+        <TextView android:textColor="@color/warning_text_color"
+                  android:id="@id/blur_text_description2"
+                  android:text="@string/advanced_settings_blur_luminosity_description2"
+                  style="@style/Widget.Chill.TextView.ListItem.Description" />
+      </LinearLayout>
+    </LinearLayout>
+    <com.google.android.material.slider.Slider android:value="0"
+                          android:id="@id/blur_slider"
+                          android:stepSize="0.0"
+                          android:valueFrom="0"
+                          android:valueTo="100"
+                          android:layout_marginStart="35.0dp"
+                          android:layout_marginEnd="14.0dp"
+                          style="@style/Widget.Chill.Slider" />
+    <LinearLayout android:id="@id/legacy_forest_layout"
+                  android:background="@drawable/transparent_ripple_button_bottom_sheet"
+                  style="@style/Widget.Chill.LinearLayout.ListItem.TwoLine.Clickable">
+      <ImageView android:src="@drawable/forest_off_icon"
+                 style="@style/Widget.Chill.ImageView.ListItem.Icon" />
+      <LinearLayout style="@style/Widget.Chill.LinearLayout.ListItem.TextBox.Stretch">
+        <TextView android:text="@string/legacy_forest_title"
+                  style="@style/Widget.Chill.TextView.ListItem.Title" />
+        <TextView android:text="@string/legacy_forest_description"
+                  style="@style/Widget.Chill.TextView.ListItem.Description" />
+        <TextView android:textColor="@color/warning_text_color"
+                  android:id="@id/legacy_forest_description_2"
+                  android:text="@string/legacy_forest_description_2"
+                  style="@style/Widget.Chill.TextView.ListItem.Description" />
+      </LinearLayout>
+      <com.google.android.material.materialswitch.MaterialSwitch android:id="@id/legacy_forest_switch"
+                            android:checked="false"
+                            style="@style/Widget.Chill.Switch" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/advanced_settings_center_haven_layout"
+                  android:background="@drawable/transparent_ripple_button_bottom_sheet"
+                  style="@style/Widget.Chill.LinearLayout.ListItem.TwoLine.Clickable">
+      <ImageView android:id="@id/advanced_settings_center_haven_icon"
+                 android:src="@drawable/center_scene_icon"
+                 style="@style/Widget.Chill.ImageView.ListItem.Icon" />
+      <LinearLayout style="@style/Widget.Chill.LinearLayout.ListItem.TextBox.Stretch">
+        <TextView android:text="@string/advanced_settings_center_haven_title"
+                  style="@style/Widget.Chill.TextView.ListItem.Title" />
+        <TextView android:text="@string/advanced_settings_center_haven_description"
+                  style="@style/Widget.Chill.TextView.ListItem.Description" />
+      </LinearLayout>
+      <com.google.android.material.materialswitch.MaterialSwitch android:id="@id/advanced_settings_center_haven_switch"
+                            android:checked="true"
+                            style="@style/Widget.Chill.Switch" />
+    </LinearLayout>
+    <LinearLayout style="@style/Widget.Chill.LinearLayout.ListItem.SingleLine">
+      <ImageView android:id="@id/advanced_settings_tree_amount"
+                 android:src="@drawable/tree_icon"
+                 style="@style/Widget.Chill.ImageView.ListItem.Icon" />
+      <LinearLayout android:id="@id/advanced_settings_tree_amount_layout"
+                    style="@style/Widget.Chill.LinearLayout.ListItem.TextBox.Stretch">
+        <TextView android:text="@string/advanced_settings_tree_amount_title"
+                  style="@style/Widget.Chill.TextView.ListItem.Title" />
+      </LinearLayout>
+    </LinearLayout>
+    <com.google.android.material.slider.Slider android:value="100"
+                          android:id="@id/advanced_settings_tree_amount_slider"
+                          android:stepSize="0.0"
+                          android:valueFrom="20"
+                          android:valueTo="100"
+                          android:layout_marginStart="35.0dp"
+                          android:layout_marginEnd="14.0dp"
+                          chillwallpaperproject:labelBehavior="gone"
+                          style="@style/Widget.Chill.Slider.NoLabel" />
+  </LinearLayout>
+</LinearLayout>
